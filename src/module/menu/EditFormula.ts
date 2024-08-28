@@ -11,13 +11,14 @@ import {
   SlateTransforms,
   SlateRange,
   t,
-  genModalTextareaElems,
   genModalButtonElems,
 } from '@wangeditor/editor'
 import { PENCIL_SVG } from '../../constants/icon-svg'
 import $, { Dom7Array, DOMElement } from '../../utils/dom'
 import { genRandomStr } from '../../utils/util'
 import { FormulaElement } from '../custom-types'
+import katex from 'katex'
+import { stringToHtml, genModalTextareaElems } from '../helper'
 
 /**
  * 生成唯一的 DOM ID
@@ -84,13 +85,31 @@ class EditFormulaMenu implements IModalMenu {
   getModalContentElem(editor: IDomEditor): DOMElement {
     const { textareaId, buttonId } = this
 
-    const [textareaContainerElem, textareaElem] = genModalTextareaElems(
+    const [textareaContainerElem, textareaElem, textareaContentElem] = genModalTextareaElems(
       t('formula.formula'),
       textareaId,
       t('formula.placeholder')
     )
     const $textarea = $(textareaElem)
     const [buttonContainerElem] = genModalButtonElems(buttonId, t('formula.ok'))
+    const $render = $('<div class="w-e-formula-modal-latex"></div>')
+
+    const renderLatex = (str: string) => {
+      katex.render(str, $render[0] as any, {
+        throwOnError: false,
+      })
+    }
+
+    $textarea.on('input', (e: any) => {
+      const value = $textarea.val()
+      const html = stringToHtml($textarea.val())
+      textareaContentElem.innerHTML = html
+      renderLatex(value)
+    })
+    $textarea.on('scroll', e => {
+      textareaContentElem.scrollLeft = (e.target as any).scrollLeft
+      textareaContentElem.scrollTop = (e.target as any).scrollTop
+    })
 
     if (this.$content == null) {
       // 第一次渲染
@@ -113,11 +132,15 @@ class EditFormulaMenu implements IModalMenu {
 
     // append textarea and button
     $content.append(textareaContainerElem)
+    $content.append($render[0])
     $content.append(buttonContainerElem)
 
     // 设置 input val
-    const value = this.getValue(editor)
+    const value = this.getValue(editor) as string
     $textarea.val(value)
+    renderLatex(value)
+    const html = stringToHtml(value)
+    textareaContentElem.innerHTML = html
 
     // focus 一个 input（异步，此时 DOM 尚未渲染）
     setTimeout(() => {

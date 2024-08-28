@@ -7,7 +7,7 @@ import { DOMElement } from '../utils/dom'
 import { IDomEditor, SlateDescendant, SlateElement } from '@wangeditor/editor'
 import { FormulaElement } from './custom-types'
 
-function parseHtml(
+export function parseHtml(
   elem: DOMElement,
   children: SlateDescendant[],
   editor: IDomEditor

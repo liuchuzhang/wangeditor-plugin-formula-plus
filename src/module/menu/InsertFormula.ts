@@ -17,6 +17,7 @@ import { SIGMA_SVG } from '../../constants/icon-svg'
 import $, { Dom7Array, DOMElement } from '../../utils/dom'
 import { genRandomStr } from '../../utils/util'
 import { FormulaElement } from '../custom-types'
+import { isMenuDisabled } from '../helper'
 
 /**
  * 生成唯一的 DOM ID
@@ -51,19 +52,7 @@ class InsertFormulaMenu implements IModalMenu {
   }
 
   isDisabled(editor: IDomEditor): boolean {
-    const { selection } = editor
-    if (selection == null) return true
-    if (SlateRange.isExpanded(selection)) return true // 选区非折叠，禁用
-
-    const selectedElems = DomEditor.getSelectedElems(editor)
-
-    const hasVoidElem = selectedElems.some(elem => editor.isVoid(elem))
-    if (hasVoidElem) return true // 选中了 void 元素，禁用
-
-    const hasPreElem = selectedElems.some(elem => DomEditor.getNodeType(elem) === 'pre')
-    if (hasPreElem) return true // 选中了 pre 原则，禁用
-
-    return false
+    return isMenuDisabled(editor)
   }
 
   getModalPositionNode(editor: IDomEditor): SlateNode | null {

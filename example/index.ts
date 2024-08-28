@@ -18,6 +18,20 @@ const editor = createEditor({
       formula: {
         menuKeys: ['editFormula'], // “编辑”菜单
       },
+      text: {
+        menuKeys: [
+          'textToFormula',
+          'headerSelect',
+          // 'insertLink',
+          'bulletedList',
+          '|',
+          'bold',
+          'through',
+          'color',
+          'bgColor',
+          'clearStyle',
+        ],
+      },
     },
     onChange(editor) {
       const html = editor.getHtml()
