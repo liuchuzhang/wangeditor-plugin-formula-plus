@@ -28,11 +28,11 @@ function genDomID(): string {
 }
 
 class EditFormulaMenu implements IModalMenu {
-  readonly title = t('formula.edit')
+  readonly title = '编辑公式'
   readonly iconSvg = PENCIL_SVG
   readonly tag = 'button'
   readonly showModal = true // 点击 button 时显示 modal
-  readonly modalWidth = 300
+  readonly modalWidth = 500
   private $content: Dom7Array | null = null
   private readonly textareaId = genDomID()
   private readonly buttonId = genDomID()
@@ -86,12 +86,12 @@ class EditFormulaMenu implements IModalMenu {
     const { textareaId, buttonId } = this
 
     const [textareaContainerElem, textareaElem, textareaContentElem] = genModalTextareaElems(
-      t('formula.formula'),
+      '公式',
       textareaId,
-      t('formula.placeholder')
+      '使用 LateX 语法'
     )
     const $textarea = $(textareaElem)
-    const [buttonContainerElem] = genModalButtonElems(buttonId, t('formula.ok'))
+    const [buttonContainerElem] = genModalButtonElems(buttonId, '确定')
     const $render = $('<div class="w-e-formula-modal-latex"></div>')
 
     const renderLatex = (str: string) => {

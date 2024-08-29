@@ -1,7 +1,5 @@
 # wangEditor 公式
 
-[English Documentation](./README-en.md)
-
 ## 介绍
 
 [wangEditor](https://www.wangeditor.com/) 公式插件，使用 [LateX](https://baike.baidu.com/item/LaTeX/1212106) 语法。
@@ -37,6 +35,9 @@ const editorConfig: Partial<IEditorConfig> = {
     formula: {
       menuKeys: ['editFormula'], // “编辑公式”菜单
     },
+    text: {
+      menuKeys: ['textToFormula'],  // “公式转换”菜单
+    }
   },
 
   // 其他...
@@ -70,4 +71,4 @@ const toolbarConfig: Partial<IToolbarConfig> = {
 
 ## 其他
 
-支持 i18n 多语言
+fork 自 [wangEditor-plugin-formula](https://github.com/wangeditor-team/wangEditor/issues/5678)，由于作者因时间原因暂停维护，故 fork 下来在原有基础上增加一些功能，后续修改不支持 i18n 多语言。

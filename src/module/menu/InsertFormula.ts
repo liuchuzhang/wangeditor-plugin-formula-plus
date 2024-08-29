@@ -10,14 +10,14 @@ import {
   SlateNode,
   SlateRange,
   t,
-  genModalTextareaElems,
   genModalButtonElems,
 } from '@wangeditor/editor'
 import { SIGMA_SVG } from '../../constants/icon-svg'
 import $, { Dom7Array, DOMElement } from '../../utils/dom'
 import { genRandomStr } from '../../utils/util'
 import { FormulaElement } from '../custom-types'
-import { isMenuDisabled } from '../helper'
+import { isMenuDisabled, stringToHtml, genModalTextareaElems } from '../helper'
+import katex from 'katex'
 
 /**
  * 生成唯一的 DOM ID
@@ -27,11 +27,11 @@ function genDomID(): string {
 }
 
 class InsertFormulaMenu implements IModalMenu {
-  readonly title = t('formula.insert')
+  readonly title = '插入公式'
   readonly iconSvg = SIGMA_SVG
   readonly tag = 'button'
   readonly showModal = true // 点击 button 时显示 modal
-  readonly modalWidth = 300
+  readonly modalWidth = 500
   private $content: Dom7Array | null = null
   private readonly textareaId = genDomID()
   private readonly buttonId = genDomID()
@@ -62,13 +62,31 @@ class InsertFormulaMenu implements IModalMenu {
   getModalContentElem(editor: IDomEditor): DOMElement {
     const { textareaId, buttonId } = this
 
-    const [textareaContainerElem, textareaElem] = genModalTextareaElems(
-      t('formula.formula'),
+    const [textareaContainerElem, textareaElem, textareaContentElem] = genModalTextareaElems(
+      '公式',
       textareaId,
-      t('formula.placeholder')
+      '使用 LateX 语法'
     )
     const $textarea = $(textareaElem)
-    const [buttonContainerElem] = genModalButtonElems(buttonId, t('formula.ok'))
+    const [buttonContainerElem] = genModalButtonElems(buttonId, '确定')
+    const $render = $('<div class="w-e-formula-modal-latex"></div>')
+
+    const renderLatex = (str: string) => {
+      katex.render(str, $render[0] as any, {
+        throwOnError: false,
+      })
+    }
+
+    $textarea.on('input', (e: any) => {
+      const value = $textarea.val()
+      const html = stringToHtml($textarea.val())
+      textareaContentElem.innerHTML = html
+      renderLatex(value)
+    })
+    $textarea.on('scroll', e => {
+      textareaContentElem.scrollLeft = (e.target as any).scrollLeft
+      textareaContentElem.scrollTop = (e.target as any).scrollTop
+    })
 
     if (this.$content == null) {
       // 第一次渲染
@@ -91,10 +109,15 @@ class InsertFormulaMenu implements IModalMenu {
 
     // append textarea and button
     $content.append(textareaContainerElem)
+    $content.append($render[0])
     $content.append(buttonContainerElem)
 
     // 设置 input val
-    $textarea.val('')
+    const value = this.getValue(editor) as string
+    $textarea.val(value)
+    renderLatex(value)
+    const html = stringToHtml(value)
+    textareaContentElem.innerHTML = html
 
     // focus 一个 input（异步，此时 DOM 尚未渲染）
     setTimeout(() => {
