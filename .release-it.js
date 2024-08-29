@@ -1,12 +1,12 @@
 module.exports = {
   git: {
-    tagName: "v${version}",
-    commitMessage: "release: v${version}",
+    tagName: 'v${version}',
+    commitMessage: 'release: v${version}',
     requireCleanWorkingDir: false,
-    requireBranch: "main",
+    requireBranch: 'main',
   },
   hooks: {
-    "before:init": ["git pull origin main", "npm run test"],
+    'before:init': ['git pull origin main', 'npm run test'],
   },
   npm: {
     publish: false,
@@ -15,5 +15,12 @@ module.exports = {
     ghRelease: false,
     glRelease: false,
     publish: false,
+  },
+  plugins: {
+    '@release-it/conventional-changelog': {
+      preset: 'angular',
+      header: '# Changelog',
+      infile: 'CHANGELOG.md',
+    },
   },
 }
