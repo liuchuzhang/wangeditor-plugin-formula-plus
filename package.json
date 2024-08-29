@@ -4,7 +4,7 @@
   "description": "wangEditor formula 公式",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangeditor-team/wangEditor-plugin-formula.git"
+    "url": "git+https://github.com/liuchuzhang/wangeditor-plugin-formula-plus.git"
   },
   "keywords": [
     "公式",
@@ -14,9 +14,9 @@
   "author": "github.com/wangfupeng1988",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wangeditor-team/wangEditor-plugin-formula/issues"
+    "url": "https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/issues"
   },
-  "homepage": "https://github.com/wangeditor-team/wangEditor-plugin-formula#readme",
+  "homepage": "https://github.com/liuchuzhang/wangeditor-plugin-formula-plus#readme",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/src/index.d.ts",
