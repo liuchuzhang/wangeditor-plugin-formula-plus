@@ -1,7 +1,6 @@
 import { DomEditor, IDomEditor } from '@wangeditor/editor'
-import { $ } from 'dom7'
+import $, { DOMElement } from '../utils/dom'
 import { Editor } from 'slate'
-import { DOMElement } from '../utils/dom'
 
 export function isMenuDisabled(editor: IDomEditor, mark?: string): boolean {
   if (editor.selection == null) return true
