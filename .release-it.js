@@ -5,6 +5,13 @@ module.exports = {
     requireCleanWorkingDir: false,
     requireBranch: 'main',
   },
+  github: {
+    release: true,
+    releaseName: 'Release v${version}',
+    releaseNotes(context) {
+      return context.changelog.split('\n').slice(1).join('\n')
+    },
+  },
   hooks: {
     'before:init': ['git pull origin main', 'npm run test'],
   },
