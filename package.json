@@ -53,7 +53,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
-    "@release-it/conventional-changelog": "4.3.0",
+    "@release-it/conventional-changelog": "^8.0.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@types/jest": "^27.4.0",
     "@types/katex": "^0.11.1",
@@ -84,7 +84,7 @@
     "postcss-loader": "^5.2.0",
     "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
-    "release-it": "^14.11.6",
+    "release-it": "^17.6.0",
     "snabbdom": "^3.3.1",
     "style-loader": "^2.0.0",
     "ts-jest": "^27.0.7",
