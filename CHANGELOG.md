@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.1.3...v1.2.0) (2024-08-30)
+
+
+### Features
+
+* 升级 katex 版本 ([146ad31](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/146ad312747033460aa7a48fc16ab349084a1358))
+
 ## [1.1.3](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.1.2...v1.1.3) (2024-08-30)
 
 
