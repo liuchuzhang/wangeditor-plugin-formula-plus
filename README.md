@@ -72,4 +72,4 @@ const toolbarConfig: Partial<IToolbarConfig> = {
 
 ## 其他
 
-fork 自 [wangEditor-plugin-formula](https://github.com/wangeditor-team/wangEditor/issues/5678)，由于作者因时间原因暂停维护，故 fork 下来在原有基础上增加一些功能，后续修改不支持 i18n 多语言。
+fork 自 [wangEditor-plugin-formula](https://github.com/wangeditor-team/wangEditor-plugin-formula)，由于作者因时间原因暂停维护，故 fork 下来在原有基础上增加一些功能，后续修改不支持 i18n 多语言。
