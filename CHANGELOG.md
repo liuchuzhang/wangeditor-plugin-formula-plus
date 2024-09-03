@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.2.0...v1.2.1) (2024-09-03)
+
+
+### Bug Fixes
+
+* 复制换行公式错位 ([82d983b](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/82d983b9599f46c95f2254b1694abae8907937e7))
+
 # [1.2.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.1.3...v1.2.0) (2024-08-30)
 
 
