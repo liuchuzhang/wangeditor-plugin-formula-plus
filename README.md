@@ -5,6 +5,7 @@
 [wangEditor](https://www.wangeditor.com/) 公式插件，使用 [LateX](https://baike.baidu.com/item/LaTeX/1212106) 语法。
 
 ![](./_img/demo.png)
+![](./_img/demo1.png)
 
 ## 安装
 
