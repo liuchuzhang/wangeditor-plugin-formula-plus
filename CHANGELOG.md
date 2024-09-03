@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.3.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.2.1...v1.3.0) (2024-09-03)
+
+
+### Features
+
+* 添加自动填充 ([28a2999](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/28a299992d4ff710fed51a810db6b1bb3f68b560))
+
 ## [1.2.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.2.0...v1.2.1) (2024-09-03)
 
 
