@@ -17,7 +17,6 @@ import $, { Dom7Array, DOMElement } from '../../utils/dom'
 import { genRandomStr } from '../../utils/util'
 import { FormulaElement } from '../custom-types'
 import { isMenuDisabled, stringToHtml, genModalTextareaElems } from '../helper'
-import katex from 'katex'
 
 /**
  * 生成唯一的 DOM ID
@@ -62,31 +61,12 @@ class InsertFormulaMenu implements IModalMenu {
   getModalContentElem(editor: IDomEditor): DOMElement {
     const { textareaId, buttonId } = this
 
-    const [textareaContainerElem, textareaElem, textareaContentElem] = genModalTextareaElems(
+    const { textareaContainerElem, setTextareaValue, renderElem } = genModalTextareaElems(
       '公式',
       textareaId,
       '使用 LateX 语法'
     )
-    const $textarea = $(textareaElem)
     const [buttonContainerElem] = genModalButtonElems(buttonId, '确定')
-    const $render = $('<div class="w-e-formula-modal-latex"></div>')
-
-    const renderLatex = (str: string) => {
-      katex.render(str, $render[0] as any, {
-        throwOnError: false,
-      })
-    }
-
-    $textarea.on('input', (e: any) => {
-      const value = $textarea.val()
-      const html = stringToHtml($textarea.val())
-      textareaContentElem.innerHTML = html
-      renderLatex(value)
-    })
-    $textarea.on('scroll', e => {
-      textareaContentElem.scrollLeft = (e.target as any).scrollLeft
-      textareaContentElem.scrollTop = (e.target as any).scrollTop
-    })
 
     if (this.$content == null) {
       // 第一次渲染
@@ -109,20 +89,12 @@ class InsertFormulaMenu implements IModalMenu {
 
     // append textarea and button
     $content.append(textareaContainerElem)
-    $content.append($render[0])
+    $content.append(renderElem)
     $content.append(buttonContainerElem)
 
     // 设置 input val
     const value = this.getValue(editor) as string
-    $textarea.val(value)
-    renderLatex(value)
-    const html = stringToHtml(value)
-    textareaContentElem.innerHTML = html
-
-    // focus 一个 input（异步，此时 DOM 尚未渲染）
-    setTimeout(() => {
-      $textarea.focus()
-    })
+    setTextareaValue(value)
 
     return $content[0]
   }

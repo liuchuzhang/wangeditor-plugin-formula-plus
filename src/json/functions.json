@@ -1,0 +1,4747 @@
+[
+  {
+    "symbol": "\\!",
+    "rendered": "n!",
+    "template": "n!"
+  },
+  {
+    "symbol": "\\\\\\!",
+    "rendered": "a\\!b"
+  },
+  {
+    "symbol": "\\\\#",
+    "rendered": "\\#"
+  },
+  {
+    "symbol": "\\\\%",
+    "rendered": "\\%"
+  },
+  {
+    "symbol": "\\\\&",
+    "rendered": "\\&"
+  },
+  {
+    "symbol": "\\\\\\'",
+    "rendered": "\\text{\\'{a}}"
+  },
+  {
+    "symbol": "\\\\\\(…\\\\\\)",
+    "rendered": "\\text{\\(\\frac a b\\)}"
+  },
+  {
+    "symbol": "\\\\",
+    "rendered": "a\\ b"
+  },
+  {
+    "symbol": "\\\\\"",
+    "rendered": "\\text{\\\"{a}}"
+  },
+  {
+    "symbol": "\\\\",
+    "rendered": "\\text{\\textdollar}"
+  },
+  {
+    "symbol": "\\\\,",
+    "rendered": "a\\,\\,{b}"
+  },
+  {
+    "symbol": "\\\\.",
+    "rendered": "\\text{\\.{a}}"
+  },
+  {
+    "symbol": "\\\\:",
+    "rendered": "a\\:\\:{b}"
+  },
+  {
+    "symbol": "\\\\;",
+    "rendered": "a\\;\\;{b}"
+  },
+  {
+    "symbol": "\\\\_",
+    "rendered": "\\_"
+  },
+  {
+    "symbol": "\\\\\\`",
+    "rendered": "\\text{\\`{a}}"
+  },
+  {
+    "symbol": "\\\\=",
+    "rendered": "\\text{\\={a}}"
+  },
+  {
+    "symbol": "\\\\>",
+    "rendered": "a\\>\\>{b}"
+  },
+  {
+    "symbol": "\\[",
+    "rendered": "["
+  },
+  {
+    "symbol": "\\]",
+    "rendered": "]"
+  },
+  {
+    "symbol": "\\\\{",
+    "rendered": "\\{"
+  },
+  {
+    "symbol": "\\\\}",
+    "rendered": "\\}"
+  },
+  {
+    "symbol": "\\\\&#124;",
+    "rendered": "\\Vert"
+  },
+  {
+    "symbol": "\\\\~",
+    "rendered": "\\text{\\~{a}}"
+  },
+  {
+    "symbol": "\\\\\\\\",
+    "rendered": "\\begin{matrix} a & b\\\\ c & d\\end{matrix}"
+  },
+  {
+    "symbol": "\\\\^",
+    "rendered": "\\text{\\^{a}}"
+  },
+  {
+    "symbol": "\\AA",
+    "rendered": "\\text{\\AA}",
+    "template": "\\text{\\AA}"
+  },
+  {
+    "symbol": "\\aa",
+    "rendered": "\\text{\\aa}",
+    "template": "\\text{\\aa}"
+  },
+  {
+    "symbol": "\\above",
+    "rendered": "{a \\above{2pt} b+1}",
+    "template": "{a \\above{} b+1}"
+  },
+  {
+    "symbol": "\\acute",
+    "rendered": "\\acute e",
+    "template": "\\acute e"
+  },
+  {
+    "symbol": "\\AE",
+    "rendered": "\\text{\\AE}",
+    "template": "\\text{\\AE}"
+  },
+  {
+    "symbol": "\\ae",
+    "rendered": "\\text{\\ae}",
+    "template": "\\text{\\ae}"
+  },
+  {
+    "symbol": "\\alef",
+    "rendered": "\\alef",
+    "template": "\\alef"
+  },
+  {
+    "symbol": "\\alefsym",
+    "rendered": "\\alefsym",
+    "template": "\\alefsym"
+  },
+  {
+    "symbol": "\\aleph",
+    "rendered": "\\aleph",
+    "template": "\\aleph"
+  },
+  {
+    "symbol": "\\allowbreak",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\Alpha",
+    "rendered": "\\Alpha",
+    "template": "\\Alpha"
+  },
+  {
+    "symbol": "\\alpha",
+    "rendered": "\\alpha",
+    "template": "\\alpha"
+  },
+  {
+    "symbol": "\\amalg",
+    "rendered": "\\amalg",
+    "template": "\\amalg"
+  },
+  {
+    "symbol": "\\And",
+    "rendered": "\\And",
+    "template": "\\And"
+  },
+  {
+    "symbol": "\\angl",
+    "rendered": "a_{\\angl n}",
+    "template": "a_{\\angl n}"
+  },
+  {
+    "symbol": "\\angln",
+    "rendered": "a_\\angln",
+    "template": "a_\\angln"
+  },
+  {
+    "symbol": "\\angle",
+    "rendered": "\\angle",
+    "template": "\\angle"
+  },
+  {
+    "symbol": "\\approx",
+    "rendered": "\\approx",
+    "template": "\\approx"
+  },
+  {
+    "symbol": "\\approxeq",
+    "rendered": "\\approxeq",
+    "template": "\\approxeq"
+  },
+  {
+    "symbol": "\\approxcolon",
+    "rendered": "\\approxcolon",
+    "template": "\\approxcolon"
+  },
+  {
+    "symbol": "\\approxcoloncolon",
+    "rendered": "\\approxcoloncolon",
+    "template": "\\approxcoloncolon"
+  },
+  {
+    "symbol": "\\arccos",
+    "rendered": "\\arccos",
+    "template": "\\arccos"
+  },
+  {
+    "symbol": "\\arcctg",
+    "rendered": "\\arcctg",
+    "template": "\\arcctg"
+  },
+  {
+    "symbol": "\\arcsin",
+    "rendered": "\\arcsin",
+    "template": "\\arcsin"
+  },
+  {
+    "symbol": "\\arctan",
+    "rendered": "\\arctan",
+    "template": "\\arctan"
+  },
+  {
+    "symbol": "\\arctg",
+    "rendered": "\\arctg",
+    "template": "\\arctg"
+  },
+  {
+    "symbol": "\\arg",
+    "rendered": "\\arg",
+    "template": "\\arg"
+  },
+  {
+    "symbol": "\\argmax",
+    "rendered": "\\argmax",
+    "template": "\\argmax"
+  },
+  {
+    "symbol": "\\argmin",
+    "rendered": "\\argmin",
+    "template": "\\argmin"
+  },
+  {
+    "symbol": "\\arraystretch",
+    "rendered": "\\def\\arraystretch{1.5}\\begin{array}{cc}a&b\\\\c&d\\end{array}",
+    "template": "\\def\\arraystretch{}{}a&b\\\\c&d\\end{array}"
+  },
+  {
+    "symbol": "\\ast",
+    "rendered": "\\ast",
+    "template": "\\ast"
+  },
+  {
+    "symbol": "\\asymp",
+    "rendered": "\\asymp",
+    "template": "\\asymp"
+  },
+  {
+    "symbol": "\\atop",
+    "rendered": "{a \\atop b}",
+    "template": "{a \\atop b}"
+  },
+  {
+    "symbol": "\\backepsilon",
+    "rendered": "\\backepsilon",
+    "template": "\\backepsilon"
+  },
+  {
+    "symbol": "\\backprime",
+    "rendered": "\\backprime",
+    "template": "\\backprime"
+  },
+  {
+    "symbol": "\\backsim",
+    "rendered": "\\backsim",
+    "template": "\\backsim"
+  },
+  {
+    "symbol": "\\backsimeq",
+    "rendered": "\\backsimeq",
+    "template": "\\backsimeq"
+  },
+  {
+    "symbol": "\\backslash",
+    "rendered": "\\backslash",
+    "template": "\\backslash"
+  },
+  {
+    "symbol": "\\bar",
+    "rendered": "\\bar{y}",
+    "template": "\\bar{}"
+  },
+  {
+    "symbol": "\\barwedge",
+    "rendered": "\\barwedge",
+    "template": "\\barwedge"
+  },
+  {
+    "symbol": "\\Bbb",
+    "rendered": "\\Bbb{ABC}",
+    "template": "\\Bbb{}"
+  },
+  {
+    "symbol": "\\Bbbk",
+    "rendered": "\\Bbbk",
+    "template": "\\Bbbk"
+  },
+  {
+    "symbol": "\\bcancel",
+    "rendered": "\\bcancel{5}",
+    "template": "\\bcancel{}"
+  },
+  {
+    "symbol": "\\because",
+    "rendered": "\\because",
+    "template": "\\because"
+  },
+  {
+    "symbol": "\\begin",
+    "rendered": "\\begin{matrix} a & b\\\\ c & d\\end{matrix}",
+    "template": "\\begin{} a & b\\\\ c & d\\end{matrix}"
+  },
+  {
+    "symbol": "\\begingroup",
+    "rendered": "\\begingroup",
+    "template": "\\begingroup"
+  },
+  {
+    "symbol": "\\Beta",
+    "rendered": "\\Beta",
+    "template": "\\Beta"
+  },
+  {
+    "symbol": "\\beta",
+    "rendered": "\\beta",
+    "template": "\\beta"
+  },
+  {
+    "symbol": "\\beth",
+    "rendered": "\\beth",
+    "template": "\\beth"
+  },
+  {
+    "symbol": "\\between",
+    "rendered": "\\between",
+    "template": "\\between"
+  },
+  {
+    "symbol": "\\bf",
+    "rendered": "\\bf AaBb12",
+    "template": "\\bf AaBb12"
+  },
+  {
+    "symbol": "\\big",
+    "rendered": "\\big(\\big)",
+    "template": "\\big(\\big)"
+  },
+  {
+    "symbol": "\\Big",
+    "rendered": "\\Big(\\Big)",
+    "template": "\\Big(\\Big)"
+  },
+  {
+    "symbol": "\\bigcap",
+    "rendered": "\\bigcap",
+    "template": "\\bigcap"
+  },
+  {
+    "symbol": "\\bigcirc",
+    "rendered": "\\bigcirc",
+    "template": "\\bigcirc"
+  },
+  {
+    "symbol": "\\bigcup",
+    "rendered": "\\bigcup",
+    "template": "\\bigcup"
+  },
+  {
+    "symbol": "\\bigg",
+    "rendered": "\\bigg(\\bigg)",
+    "template": "\\bigg(\\bigg)"
+  },
+  {
+    "symbol": "\\Bigg",
+    "rendered": "\\Bigg(\\Bigg)",
+    "template": "\\Bigg(\\Bigg)"
+  },
+  {
+    "symbol": "\\biggl",
+    "rendered": "\\biggl(",
+    "template": "\\biggl("
+  },
+  {
+    "symbol": "\\Biggl",
+    "rendered": "\\Biggl(",
+    "template": "\\Biggl("
+  },
+  {
+    "symbol": "\\biggm",
+    "rendered": "\\biggm\\vert",
+    "template": "\\biggm\\vert"
+  },
+  {
+    "symbol": "\\Biggm",
+    "rendered": "\\Biggm\\vert",
+    "template": "\\Biggm\\vert"
+  },
+  {
+    "symbol": "\\biggr",
+    "rendered": "\\biggr)",
+    "template": "\\biggr)"
+  },
+  {
+    "symbol": "\\Biggr",
+    "rendered": "\\Biggr)",
+    "template": "\\Biggr)"
+  },
+  {
+    "symbol": "\\bigl",
+    "rendered": "\\bigl(",
+    "template": "\\bigl("
+  },
+  {
+    "symbol": "\\Bigl",
+    "rendered": "\\Bigl(",
+    "template": "\\Bigl("
+  },
+  {
+    "symbol": "\\bigm",
+    "rendered": "\\bigm\\vert",
+    "template": "\\bigm\\vert"
+  },
+  {
+    "symbol": "\\Bigm",
+    "rendered": "\\Bigm\\vert",
+    "template": "\\Bigm\\vert"
+  },
+  {
+    "symbol": "\\bigodot",
+    "rendered": "\\bigodot",
+    "template": "\\bigodot"
+  },
+  {
+    "symbol": "\\bigoplus",
+    "rendered": "\\bigoplus",
+    "template": "\\bigoplus"
+  },
+  {
+    "symbol": "\\bigotimes",
+    "rendered": "\\bigotimes",
+    "template": "\\bigotimes"
+  },
+  {
+    "symbol": "\\bigr",
+    "rendered": "\\bigr)",
+    "template": "\\bigr)"
+  },
+  {
+    "symbol": "\\Bigr",
+    "rendered": "\\Bigr)",
+    "template": "\\Bigr)"
+  },
+  {
+    "symbol": "\\bigsqcup",
+    "rendered": "\\bigsqcup",
+    "template": "\\bigsqcup"
+  },
+  {
+    "symbol": "\\bigstar",
+    "rendered": "\\bigstar",
+    "template": "\\bigstar"
+  },
+  {
+    "symbol": "\\bigtriangledown",
+    "rendered": "\\bigtriangledown",
+    "template": "\\bigtriangledown"
+  },
+  {
+    "symbol": "\\bigtriangleup",
+    "rendered": "\\bigtriangleup",
+    "template": "\\bigtriangleup"
+  },
+  {
+    "symbol": "\\biguplus",
+    "rendered": "\\biguplus",
+    "template": "\\biguplus"
+  },
+  {
+    "symbol": "\\bigvee",
+    "rendered": "\\bigvee",
+    "template": "\\bigvee"
+  },
+  {
+    "symbol": "\\bigwedge",
+    "rendered": "\\bigwedge",
+    "template": "\\bigwedge"
+  },
+  {
+    "symbol": "\\binom",
+    "rendered": "\\binom n k",
+    "template": "\\binom n k"
+  },
+  {
+    "symbol": "\\blacklozenge",
+    "rendered": "\\blacklozenge",
+    "template": "\\blacklozenge"
+  },
+  {
+    "symbol": "\\blacksquare",
+    "rendered": "\\blacksquare",
+    "template": "\\blacksquare"
+  },
+  {
+    "symbol": "\\blacktriangle",
+    "rendered": "\\blacktriangle",
+    "template": "\\blacktriangle"
+  },
+  {
+    "symbol": "\\blacktriangledown",
+    "rendered": "\\blacktriangledown",
+    "template": "\\blacktriangledown"
+  },
+  {
+    "symbol": "\\blacktriangleleft",
+    "rendered": "\\blacktriangleleft",
+    "template": "\\blacktriangleleft"
+  },
+  {
+    "symbol": "\\blacktriangleright",
+    "rendered": "\\blacktriangleright",
+    "template": "\\blacktriangleright"
+  },
+  {
+    "symbol": "\\bm",
+    "rendered": "\\bm{AaBb}",
+    "template": "\\bm{}"
+  },
+  {
+    "symbol": "\\bmod",
+    "rendered": "a \\bmod b",
+    "template": "a \\bmod b"
+  },
+  {
+    "symbol": "\\bold",
+    "rendered": "\\bold{AaBb123}",
+    "template": "\\bold{}"
+  },
+  {
+    "symbol": "\\boldsymbol",
+    "rendered": "\\boldsymbol{AaBb}",
+    "template": "\\boldsymbol{}"
+  },
+  {
+    "symbol": "\\bot",
+    "rendered": "\\bot",
+    "template": "\\bot"
+  },
+  {
+    "symbol": "\\bowtie",
+    "rendered": "\\bowtie",
+    "template": "\\bowtie"
+  },
+  {
+    "symbol": "\\Box",
+    "rendered": "\\Box",
+    "template": "\\Box"
+  },
+  {
+    "symbol": "\\boxdot",
+    "rendered": "\\boxdot",
+    "template": "\\boxdot"
+  },
+  {
+    "symbol": "\\boxed",
+    "rendered": "\\boxed{ab}",
+    "template": "\\boxed{}"
+  },
+  {
+    "symbol": "\\boxminus",
+    "rendered": "\\boxminus",
+    "template": "\\boxminus"
+  },
+  {
+    "symbol": "\\boxplus",
+    "rendered": "\\boxplus",
+    "template": "\\boxplus"
+  },
+  {
+    "symbol": "\\boxtimes",
+    "rendered": "\\boxtimes",
+    "template": "\\boxtimes"
+  },
+  {
+    "symbol": "\\Bra",
+    "rendered": "\\Bra{\\psi}",
+    "template": "\\Bra{}"
+  },
+  {
+    "symbol": "\\bra",
+    "rendered": "\\bra{\\psi}",
+    "template": "\\bra{}"
+  },
+  {
+    "symbol": "\\braket",
+    "rendered": "\\braket{1}",
+    "template": "\\braket{}"
+  },
+  {
+    "symbol": "\\Braket",
+    "rendered": "\\Braket{1}",
+    "template": "\\Braket{}"
+  },
+  {
+    "symbol": "\\brace",
+    "rendered": "{n\\brace k}",
+    "template": "{n\\brace k}"
+  },
+  {
+    "symbol": "\\brack",
+    "rendered": "{n\\brack k}",
+    "template": "{n\\brack k}"
+  },
+  {
+    "symbol": "\\breve",
+    "rendered": "\\breve{eu}",
+    "template": "\\breve{}"
+  },
+  {
+    "symbol": "\\bull",
+    "rendered": "\\bull",
+    "template": "\\bull"
+  },
+  {
+    "symbol": "\\bullet",
+    "rendered": "\\bullet",
+    "template": "\\bullet"
+  },
+  {
+    "symbol": "\\Bumpeq",
+    "rendered": "\\Bumpeq",
+    "template": "\\Bumpeq"
+  },
+  {
+    "symbol": "\\bumpeq",
+    "rendered": "\\bumpeq",
+    "template": "\\bumpeq"
+  },
+  {
+    "symbol": "\\cal",
+    "rendered": "\\cal AaBb123",
+    "template": "\\cal AaBb123"
+  },
+  {
+    "symbol": "\\cancel",
+    "rendered": "\\cancel{5}",
+    "template": "\\cancel{}"
+  },
+  {
+    "symbol": "\\Cap",
+    "rendered": "\\Cap",
+    "template": "\\Cap"
+  },
+  {
+    "symbol": "\\cap",
+    "rendered": "\\cap",
+    "template": "\\cap"
+  },
+  {
+    "symbol": "\\cdot",
+    "rendered": "\\cdot",
+    "template": "\\cdot"
+  },
+  {
+    "symbol": "\\cdotp",
+    "rendered": "\\cdotp",
+    "template": "\\cdotp"
+  },
+  {
+    "symbol": "\\cdots",
+    "rendered": "\\cdots",
+    "template": "\\cdots"
+  },
+  {
+    "symbol": "\\ce",
+    "rendered": "{\\mathrm{C}{\\vphantom{X}}_{\\smash[t]{6}}\\mathrm{H}{\\vphantom{X}}_{\\smash[t]{5}}{-}\\mathrm{CHO}}",
+    "template": "{\\mathrm{C}{\\vphantom{X}}_{\\smash[t]{6}}\\mathrm{H}{\\vphantom{X}}_{\\smash[t]{5}}{-}\\mathrm{CHO}}"
+  },
+  {
+    "symbol": "\\centerdot",
+    "rendered": "a\\centerdot b",
+    "template": "a\\centerdot b"
+  },
+  {
+    "symbol": "\\cfrac",
+    "rendered": "\\cfrac{2}{1+\\cfrac{2}{1+\\cfrac{2}{1}}}",
+    "template": "\\cfrac{}{}{1+\\cfrac{}{}}}"
+  },
+  {
+    "symbol": "\\char",
+    "rendered": "\\char\"263a",
+    "template": "\\char\"263a"
+  },
+  {
+    "symbol": "\\check",
+    "rendered": "\\check{oe}",
+    "template": "\\check{}"
+  },
+  {
+    "symbol": "\\ch",
+    "rendered": "\\ch",
+    "template": "\\ch"
+  },
+  {
+    "symbol": "\\checkmark",
+    "rendered": "\\checkmark",
+    "template": "\\checkmark"
+  },
+  {
+    "symbol": "\\Chi",
+    "rendered": "\\Chi",
+    "template": "\\Chi"
+  },
+  {
+    "symbol": "\\chi",
+    "rendered": "\\chi",
+    "template": "\\chi"
+  },
+  {
+    "symbol": "\\choose",
+    "rendered": "{n+1 \\choose k+2}",
+    "template": "{n+1 \\choose k+2}"
+  },
+  {
+    "symbol": "\\circ",
+    "rendered": "\\circ",
+    "template": "\\circ"
+  },
+  {
+    "symbol": "\\circeq",
+    "rendered": "\\circeq",
+    "template": "\\circeq"
+  },
+  {
+    "symbol": "\\circlearrowleft",
+    "rendered": "\\circlearrowleft",
+    "template": "\\circlearrowleft"
+  },
+  {
+    "symbol": "\\circlearrowright",
+    "rendered": "\\circlearrowright",
+    "template": "\\circlearrowright"
+  },
+  {
+    "symbol": "\\circledast",
+    "rendered": "\\circledast",
+    "template": "\\circledast"
+  },
+  {
+    "symbol": "\\circledcirc",
+    "rendered": "\\circledcirc",
+    "template": "\\circledcirc"
+  },
+  {
+    "symbol": "\\circleddash",
+    "rendered": "\\circleddash",
+    "template": "\\circleddash"
+  },
+  {
+    "symbol": "\\circledR",
+    "rendered": "\\circledR",
+    "template": "\\circledR"
+  },
+  {
+    "symbol": "\\circledS",
+    "rendered": "\\circledS",
+    "template": "\\circledS"
+  },
+  {
+    "symbol": "\\clubs",
+    "rendered": "\\clubs",
+    "template": "\\clubs"
+  },
+  {
+    "symbol": "\\clubsuit",
+    "rendered": "\\clubsuit",
+    "template": "\\clubsuit"
+  },
+  {
+    "symbol": "\\cnums",
+    "rendered": "\\cnums",
+    "template": "\\cnums"
+  },
+  {
+    "symbol": "\\colon",
+    "rendered": "\\colon",
+    "template": "\\colon"
+  },
+  {
+    "symbol": "\\Colonapprox",
+    "rendered": "\\Colonapprox",
+    "template": "\\Colonapprox"
+  },
+  {
+    "symbol": "\\colonapprox",
+    "rendered": "\\colonapprox",
+    "template": "\\colonapprox"
+  },
+  {
+    "symbol": "\\coloncolon",
+    "rendered": "\\coloncolon",
+    "template": "\\coloncolon"
+  },
+  {
+    "symbol": "\\coloncolonapprox",
+    "rendered": "\\coloncolonapprox",
+    "template": "\\coloncolonapprox"
+  },
+  {
+    "symbol": "\\coloncolonequals",
+    "rendered": "\\coloncolonequals",
+    "template": "\\coloncolonequals"
+  },
+  {
+    "symbol": "\\coloncolonminus",
+    "rendered": "\\coloncolonminus",
+    "template": "\\coloncolonminus"
+  },
+  {
+    "symbol": "\\coloncolonsim",
+    "rendered": "\\coloncolonsim",
+    "template": "\\coloncolonsim"
+  },
+  {
+    "symbol": "\\Coloneq",
+    "rendered": "\\Coloneq",
+    "template": "\\Coloneq"
+  },
+  {
+    "symbol": "\\coloneq",
+    "rendered": "\\coloneq",
+    "template": "\\coloneq"
+  },
+  {
+    "symbol": "\\colonequals",
+    "rendered": "\\colonequals",
+    "template": "\\colonequals"
+  },
+  {
+    "symbol": "\\Coloneqq",
+    "rendered": "\\Coloneqq",
+    "template": "\\Coloneqq"
+  },
+  {
+    "symbol": "\\coloneqq",
+    "rendered": "\\coloneqq",
+    "template": "\\coloneqq"
+  },
+  {
+    "symbol": "\\colonminus",
+    "rendered": "\\colonminus",
+    "template": "\\colonminus"
+  },
+  {
+    "symbol": "\\Colonsim",
+    "rendered": "\\Colonsim",
+    "template": "\\Colonsim"
+  },
+  {
+    "symbol": "\\colonsim",
+    "rendered": "\\colonsim",
+    "template": "\\colonsim"
+  },
+  {
+    "symbol": "\\color",
+    "rendered": "\\color{#0000FF} AaBb123",
+    "template": "\\color{} AaBb123"
+  },
+  {
+    "symbol": "\\colorbox",
+    "rendered": "\\colorbox{red}{Black on red}",
+    "template": "\\colorbox{}{}"
+  },
+  {
+    "symbol": "\\complement",
+    "rendered": "\\complement",
+    "template": "\\complement"
+  },
+  {
+    "symbol": "\\Complex",
+    "rendered": "\\Complex",
+    "template": "\\Complex"
+  },
+  {
+    "symbol": "\\cong",
+    "rendered": "\\cong",
+    "template": "\\cong"
+  },
+  {
+    "symbol": "\\coprod",
+    "rendered": "\\coprod",
+    "template": "\\coprod"
+  },
+  {
+    "symbol": "\\copyright",
+    "rendered": "\\copyright",
+    "template": "\\copyright"
+  },
+  {
+    "symbol": "\\cos",
+    "rendered": "\\cos",
+    "template": "\\cos"
+  },
+  {
+    "symbol": "\\cosec",
+    "rendered": "\\cosec",
+    "template": "\\cosec"
+  },
+  {
+    "symbol": "\\cosh",
+    "rendered": "\\cosh",
+    "template": "\\cosh"
+  },
+  {
+    "symbol": "\\cot",
+    "rendered": "\\cot",
+    "template": "\\cot"
+  },
+  {
+    "symbol": "\\cotg",
+    "rendered": "\\cotg",
+    "template": "\\cotg"
+  },
+  {
+    "symbol": "\\coth",
+    "rendered": "\\coth",
+    "template": "\\coth"
+  },
+  {
+    "symbol": "\\cr",
+    "rendered": "\\begin{matrix} a & b\\cr c & d \\end{matrix}",
+    "template": "\\begin{matrix} a & b\\cr c & d \\end{matrix}"
+  },
+  {
+    "symbol": "\\csc",
+    "rendered": "\\csc",
+    "template": "\\csc"
+  },
+  {
+    "symbol": "\\ctg",
+    "rendered": "\\ctg",
+    "template": "\\ctg"
+  },
+  {
+    "symbol": "\\cth",
+    "rendered": "\\cth",
+    "template": "\\cth"
+  },
+  {
+    "symbol": "\\Cup",
+    "rendered": "\\Cup",
+    "template": "\\Cup"
+  },
+  {
+    "symbol": "\\cup",
+    "rendered": "\\cup",
+    "template": "\\cup"
+  },
+  {
+    "symbol": "\\curlyeqprec",
+    "rendered": "\\curlyeqprec",
+    "template": "\\curlyeqprec"
+  },
+  {
+    "symbol": "\\curlyeqsucc",
+    "rendered": "\\curlyeqsucc",
+    "template": "\\curlyeqsucc"
+  },
+  {
+    "symbol": "\\curlyvee",
+    "rendered": "\\curlyvee",
+    "template": "\\curlyvee"
+  },
+  {
+    "symbol": "\\curlywedge",
+    "rendered": "\\curlywedge",
+    "template": "\\curlywedge"
+  },
+  {
+    "symbol": "\\curvearrowleft",
+    "rendered": "\\curvearrowleft",
+    "template": "\\curvearrowleft"
+  },
+  {
+    "symbol": "\\curvearrowright",
+    "rendered": "\\curvearrowright",
+    "template": "\\curvearrowright"
+  },
+  {
+    "symbol": "\\dag",
+    "rendered": "\\dag",
+    "template": "\\dag"
+  },
+  {
+    "symbol": "\\Dagger",
+    "rendered": "\\Dagger",
+    "template": "\\Dagger"
+  },
+  {
+    "symbol": "\\dagger",
+    "rendered": "\\dagger",
+    "template": "\\dagger"
+  },
+  {
+    "symbol": "\\daleth",
+    "rendered": "\\daleth",
+    "template": "\\daleth"
+  },
+  {
+    "symbol": "\\Darr",
+    "rendered": "\\Darr",
+    "template": "\\Darr"
+  },
+  {
+    "symbol": "\\dArr",
+    "rendered": "\\dArr",
+    "template": "\\dArr"
+  },
+  {
+    "symbol": "\\darr",
+    "rendered": "\\darr",
+    "template": "\\darr"
+  },
+  {
+    "symbol": "\\dashleftarrow",
+    "rendered": "\\dashleftarrow",
+    "template": "\\dashleftarrow"
+  },
+  {
+    "symbol": "\\dashrightarrow",
+    "rendered": "\\dashrightarrow",
+    "template": "\\dashrightarrow"
+  },
+  {
+    "symbol": "\\dashv",
+    "rendered": "\\dashv",
+    "template": "\\dashv"
+  },
+  {
+    "symbol": "\\dbinom",
+    "rendered": "\\dbinom n k",
+    "template": "\\dbinom n k"
+  },
+  {
+    "symbol": "\\dblcolon",
+    "rendered": "\\dblcolon",
+    "template": "\\dblcolon"
+  },
+  {
+    "symbol": "\\ddag",
+    "rendered": "\\ddag",
+    "template": "\\ddag"
+  },
+  {
+    "symbol": "\\ddagger",
+    "rendered": "\\ddagger",
+    "template": "\\ddagger"
+  },
+  {
+    "symbol": "\\ddot",
+    "rendered": "\\ddot x",
+    "template": "\\ddot x"
+  },
+  {
+    "symbol": "\\ddots",
+    "rendered": "\\ddots",
+    "template": "\\ddots"
+  },
+  {
+    "symbol": "\\def",
+    "rendered": "\\def\\foo{x^2} \\foo + \\foo",
+    "template": "\\def\\foo{x^2} \\foo + \\foo"
+  },
+  {
+    "symbol": "\\deg",
+    "rendered": "\\deg",
+    "template": "\\deg"
+  },
+  {
+    "symbol": "\\degree",
+    "rendered": "\\degree",
+    "template": "\\degree"
+  },
+  {
+    "symbol": "\\delta",
+    "rendered": "\\delta",
+    "template": "\\delta"
+  },
+  {
+    "symbol": "\\Delta",
+    "rendered": "\\Delta",
+    "template": "\\Delta"
+  },
+  {
+    "symbol": "\\det",
+    "rendered": "\\det",
+    "template": "\\det"
+  },
+  {
+    "symbol": "\\digamma",
+    "rendered": "\\digamma",
+    "template": "\\digamma"
+  },
+  {
+    "symbol": "\\dfrac",
+    "rendered": "\\dfrac{a-1}{b-1}",
+    "template": "\\dfrac{}{}"
+  },
+  {
+    "symbol": "\\diagdown",
+    "rendered": "\\diagdown",
+    "template": "\\diagdown"
+  },
+  {
+    "symbol": "\\diagup",
+    "rendered": "\\diagup",
+    "template": "\\diagup"
+  },
+  {
+    "symbol": "\\Diamond",
+    "rendered": "\\Diamond",
+    "template": "\\Diamond"
+  },
+  {
+    "symbol": "\\diamond",
+    "rendered": "\\diamond",
+    "template": "\\diamond"
+  },
+  {
+    "symbol": "\\diamonds",
+    "rendered": "\\diamonds",
+    "template": "\\diamonds"
+  },
+  {
+    "symbol": "\\diamondsuit",
+    "rendered": "\\diamondsuit",
+    "template": "\\diamondsuit"
+  },
+  {
+    "symbol": "\\dim",
+    "rendered": "\\dim",
+    "template": "\\dim"
+  },
+  {
+    "symbol": "\\displaystyle",
+    "rendered": "\\displaystyle\\sum_0^n",
+    "template": "\\displaystyle\\sum_0^n"
+  },
+  {
+    "symbol": "\\div",
+    "rendered": "\\div",
+    "template": "\\div"
+  },
+  {
+    "symbol": "\\divideontimes",
+    "rendered": "\\divideontimes",
+    "template": "\\divideontimes"
+  },
+  {
+    "symbol": "\\dot",
+    "rendered": "\\dot x",
+    "template": "\\dot x"
+  },
+  {
+    "symbol": "\\Doteq",
+    "rendered": "\\Doteq",
+    "template": "\\Doteq"
+  },
+  {
+    "symbol": "\\doteq",
+    "rendered": "\\doteq",
+    "template": "\\doteq"
+  },
+  {
+    "symbol": "\\doteqdot",
+    "rendered": "\\doteqdot",
+    "template": "\\doteqdot"
+  },
+  {
+    "symbol": "\\dotplus",
+    "rendered": "\\dotplus",
+    "template": "\\dotplus"
+  },
+  {
+    "symbol": "\\dots",
+    "rendered": "x_1 + \\dots + x_n",
+    "template": "x_1 + \\dots + x_n"
+  },
+  {
+    "symbol": "\\dotsb",
+    "rendered": "x_1 +\\dotsb + x_n",
+    "template": "x_1 +\\dotsb + x_n"
+  },
+  {
+    "symbol": "\\dotsc",
+    "rendered": "x,\\dotsc,y",
+    "template": "x,\\dotsc,y"
+  },
+  {
+    "symbol": "\\dotsi",
+    "rendered": "\\int_{A_1}\\int_{A_2}\\dotsi",
+    "template": "\\int_{A_1}\\int_{A_2}\\dotsi"
+  },
+  {
+    "symbol": "\\dotsm",
+    "rendered": "x_1 x_2 \\dotsm x_n",
+    "template": "x_1 x_2 \\dotsm x_n"
+  },
+  {
+    "symbol": "\\dotso",
+    "rendered": "\\dotso",
+    "template": "\\dotso"
+  },
+  {
+    "symbol": "\\doublebarwedge",
+    "rendered": "\\doublebarwedge",
+    "template": "\\doublebarwedge"
+  },
+  {
+    "symbol": "\\doublecap",
+    "rendered": "\\doublecap",
+    "template": "\\doublecap"
+  },
+  {
+    "symbol": "\\doublecup",
+    "rendered": "\\doublecup",
+    "template": "\\doublecup"
+  },
+  {
+    "symbol": "\\Downarrow",
+    "rendered": "\\Downarrow",
+    "template": "\\Downarrow"
+  },
+  {
+    "symbol": "\\downarrow",
+    "rendered": "\\downarrow",
+    "template": "\\downarrow"
+  },
+  {
+    "symbol": "\\downdownarrows",
+    "rendered": "\\downdownarrows",
+    "template": "\\downdownarrows"
+  },
+  {
+    "symbol": "\\downharpoonleft",
+    "rendered": "\\downharpoonleft",
+    "template": "\\downharpoonleft"
+  },
+  {
+    "symbol": "\\downharpoonright",
+    "rendered": "\\downharpoonright",
+    "template": "\\downharpoonright"
+  },
+  {
+    "symbol": "\\edef",
+    "rendered": "\\def\\foo{a}\\edef\\fcopy{\\foo}\\def\\foo{}\\fcopy",
+    "template": "\\def\\foo{a}\\edef\\fcopy{\\foo}\\def\\foo{}\\fcopy"
+  },
+  {
+    "symbol": "\\ell",
+    "rendered": "\\ell",
+    "template": "\\ell"
+  },
+  {
+    "symbol": "\\emph",
+    "rendered": "\\emph{nested \\emph{emphasis}}",
+    "template": "\\emph{}}"
+  },
+  {
+    "symbol": "\\empty",
+    "rendered": "\\empty",
+    "template": "\\empty"
+  },
+  {
+    "symbol": "\\emptyset",
+    "rendered": "\\emptyset",
+    "template": "\\emptyset"
+  },
+  {
+    "symbol": "\\end",
+    "rendered": "\\begin{matrix} a & b\\\\ c & d\\end{matrix}",
+    "template": "\\begin{matrix} a & b\\\\ c & d\\end{}"
+  },
+  {
+    "symbol": "\\endgroup",
+    "rendered": "{a\\endgroup",
+    "template": "{a\\endgroup"
+  },
+  {
+    "symbol": "\\enspace",
+    "rendered": "a\\enspace b",
+    "template": "a\\enspace b"
+  },
+  {
+    "symbol": "\\Epsilon",
+    "rendered": "\\Epsilon",
+    "template": "\\Epsilon"
+  },
+  {
+    "symbol": "\\epsilon",
+    "rendered": "\\epsilon",
+    "template": "\\epsilon"
+  },
+  {
+    "symbol": "\\eqcirc",
+    "rendered": "\\eqcirc",
+    "template": "\\eqcirc"
+  },
+  {
+    "symbol": "\\Eqcolon",
+    "rendered": "\\Eqcolon",
+    "template": "\\Eqcolon"
+  },
+  {
+    "symbol": "\\eqcolon",
+    "rendered": "\\eqcolon",
+    "template": "\\eqcolon"
+  },
+  {
+    "symbol": "\\Eqqcolon",
+    "rendered": "\\Eqqcolon",
+    "template": "\\Eqqcolon"
+  },
+  {
+    "symbol": "\\eqqcolon",
+    "rendered": "\\eqqcolon",
+    "template": "\\eqqcolon"
+  },
+  {
+    "symbol": "\\eqsim",
+    "rendered": "\\eqsim",
+    "template": "\\eqsim"
+  },
+  {
+    "symbol": "\\eqslantgtr",
+    "rendered": "\\eqslantgtr",
+    "template": "\\eqslantgtr"
+  },
+  {
+    "symbol": "\\eqslantless",
+    "rendered": "\\eqslantless",
+    "template": "\\eqslantless"
+  },
+  {
+    "symbol": "\\equalscolon",
+    "rendered": "\\equalscolon",
+    "template": "\\equalscolon"
+  },
+  {
+    "symbol": "\\equalscoloncolon",
+    "rendered": "\\equalscoloncolon",
+    "template": "\\equalscoloncolon"
+  },
+  {
+    "symbol": "\\equiv",
+    "rendered": "\\equiv",
+    "template": "\\equiv"
+  },
+  {
+    "symbol": "\\Eta",
+    "rendered": "\\Eta",
+    "template": "\\Eta"
+  },
+  {
+    "symbol": "\\eta",
+    "rendered": "\\eta",
+    "template": "\\eta"
+  },
+  {
+    "symbol": "\\eth",
+    "rendered": "\\eth",
+    "template": "\\eth"
+  },
+  {
+    "symbol": "\\exist",
+    "rendered": "\\exist",
+    "template": "\\exist"
+  },
+  {
+    "symbol": "\\exists",
+    "rendered": "\\exists",
+    "template": "\\exists"
+  },
+  {
+    "symbol": "\\exp",
+    "rendered": "\\exp",
+    "template": "\\exp"
+  },
+  {
+    "symbol": "\\expandafter",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\fallingdotseq",
+    "rendered": "\\fallingdotseq",
+    "template": "\\fallingdotseq"
+  },
+  {
+    "symbol": "\\fbox",
+    "rendered": "\\fbox{Hi there!}",
+    "template": "\\fbox{}"
+  },
+  {
+    "symbol": "\\fcolorbox",
+    "rendered": "\\fcolorbox{red}{aqua}{A}",
+    "template": "\\fcolorbox{}{}{A}"
+  },
+  {
+    "symbol": "\\Finv",
+    "rendered": "\\Finv",
+    "template": "\\Finv"
+  },
+  {
+    "symbol": "\\flat",
+    "rendered": "\\flat",
+    "template": "\\flat"
+  },
+  {
+    "symbol": "\\footnotesize",
+    "rendered": "\\footnotesize footnotesize",
+    "template": "\\footnotesize footnotesize"
+  },
+  {
+    "symbol": "\\forall",
+    "rendered": "\\forall",
+    "template": "\\forall"
+  },
+  {
+    "symbol": "\\frac",
+    "rendered": "\\frac a b",
+    "template": "\\frac a b"
+  },
+  {
+    "symbol": "\\frak",
+    "rendered": "\\frak{AaBb}",
+    "template": "\\frak{}"
+  },
+  {
+    "symbol": "\\frown",
+    "rendered": "\\frown",
+    "template": "\\frown"
+  },
+  {
+    "symbol": "\\futurelet",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\Game",
+    "rendered": "\\Game",
+    "template": "\\Game"
+  },
+  {
+    "symbol": "\\Gamma",
+    "rendered": "\\Gamma",
+    "template": "\\Gamma"
+  },
+  {
+    "symbol": "\\gamma",
+    "rendered": "\\gamma",
+    "template": "\\gamma"
+  },
+  {
+    "symbol": "\\gcd",
+    "rendered": "\\gcd",
+    "template": "\\gcd"
+  },
+  {
+    "symbol": "\\gdef",
+    "rendered": "\\gdef\\sqr#1{#1^2} \\sqr{y} + \\sqr{y}",
+    "template": "\\gdef\\sqr#1{#1^2} \\sqr{y} + \\sqr{y}"
+  },
+  {
+    "symbol": "\\ge",
+    "rendered": "\\ge",
+    "template": "\\ge"
+  },
+  {
+    "symbol": "\\genfrac",
+    "rendered": "\\genfrac ( ] {2pt}{0}a{a+1}",
+    "template": "\\genfrac ( ] {2pt}{0}a{a+1}"
+  },
+  {
+    "symbol": "\\geq",
+    "rendered": "\\geq",
+    "template": "\\geq"
+  },
+  {
+    "symbol": "\\geqq",
+    "rendered": "\\geqq",
+    "template": "\\geqq"
+  },
+  {
+    "symbol": "\\geqslant",
+    "rendered": "\\geqslant",
+    "template": "\\geqslant"
+  },
+  {
+    "symbol": "\\gets",
+    "rendered": "\\gets",
+    "template": "\\gets"
+  },
+  {
+    "symbol": "\\gg",
+    "rendered": "\\gg",
+    "template": "\\gg"
+  },
+  {
+    "symbol": "\\ggg",
+    "rendered": "\\ggg",
+    "template": "\\ggg"
+  },
+  {
+    "symbol": "\\gggtr",
+    "rendered": "\\gggtr",
+    "template": "\\gggtr"
+  },
+  {
+    "symbol": "\\gimel",
+    "rendered": "\\gimel",
+    "template": "\\gimel"
+  },
+  {
+    "symbol": "\\global",
+    "rendered": "\\global\\def\\add#1#2{#1+#2} \\add 2 3",
+    "template": "\\global\\def\\add#1#2{#1+#2} \\add 2 3"
+  },
+  {
+    "symbol": "\\gnapprox",
+    "rendered": "\\gnapprox",
+    "template": "\\gnapprox"
+  },
+  {
+    "symbol": "\\gneq",
+    "rendered": "\\gneq",
+    "template": "\\gneq"
+  },
+  {
+    "symbol": "\\gneqq",
+    "rendered": "\\gneqq",
+    "template": "\\gneqq"
+  },
+  {
+    "symbol": "\\gnsim",
+    "rendered": "\\gnsim",
+    "template": "\\gnsim"
+  },
+  {
+    "symbol": "\\grave",
+    "rendered": "\\grave{eu}",
+    "template": "\\grave{}"
+  },
+  {
+    "symbol": "\\gt",
+    "rendered": "a \\gt b",
+    "template": "a \\gt b"
+  },
+  {
+    "symbol": "\\gtrdot",
+    "rendered": "\\gtrdot",
+    "template": "\\gtrdot"
+  },
+  {
+    "symbol": "\\gtrapprox",
+    "rendered": "\\gtrapprox",
+    "template": "\\gtrapprox"
+  },
+  {
+    "symbol": "\\gtreqless",
+    "rendered": "\\gtreqless",
+    "template": "\\gtreqless"
+  },
+  {
+    "symbol": "\\gtreqqless",
+    "rendered": "\\gtreqqless",
+    "template": "\\gtreqqless"
+  },
+  {
+    "symbol": "\\gtrless",
+    "rendered": "\\gtrless",
+    "template": "\\gtrless"
+  },
+  {
+    "symbol": "\\gtrsim",
+    "rendered": "\\gtrsim",
+    "template": "\\gtrsim"
+  },
+  {
+    "symbol": "\\gvertneqq",
+    "rendered": "\\gvertneqq",
+    "template": "\\gvertneqq"
+  },
+  {
+    "symbol": "\\H",
+    "rendered": "\\text{\\H{a}}",
+    "template": "\\text{\\H{}}"
+  },
+  {
+    "symbol": "\\Harr",
+    "rendered": "\\Harr",
+    "template": "\\Harr"
+  },
+  {
+    "symbol": "\\hArr",
+    "rendered": "\\hArr",
+    "template": "\\hArr"
+  },
+  {
+    "symbol": "\\harr",
+    "rendered": "\\harr",
+    "template": "\\harr"
+  },
+  {
+    "symbol": "\\hat",
+    "rendered": "\\hat{\\theta}",
+    "template": "\\hat{}"
+  },
+  {
+    "symbol": "\\hbar",
+    "rendered": "\\hbar",
+    "template": "\\hbar"
+  },
+  {
+    "symbol": "\\hbox",
+    "rendered": "\\hbox{x^2}",
+    "template": "\\hbox{}"
+  },
+  {
+    "symbol": "\\hdashline",
+    "rendered": "\\begin{matrix}a&b\\\\ \\hdashline c &d\\end{matrix}",
+    "template": "\\begin{matrix}a&b\\\\ \\hdashline c &d\\end{matrix}"
+  },
+  {
+    "symbol": "\\hearts",
+    "rendered": "\\hearts",
+    "template": "\\hearts"
+  },
+  {
+    "symbol": "\\heartsuit",
+    "rendered": "\\heartsuit",
+    "template": "\\heartsuit"
+  },
+  {
+    "symbol": "\\hline",
+    "rendered": "\\begin{matrix}a&b\\\\ \\hline c &d\\end{matrix}",
+    "template": "\\begin{matrix}a&b\\\\ \\hline c &d\\end{matrix}"
+  },
+  {
+    "symbol": "\\hom",
+    "rendered": "\\hom",
+    "template": "\\hom"
+  },
+  {
+    "symbol": "\\hookleftarrow",
+    "rendered": "\\hookleftarrow",
+    "template": "\\hookleftarrow"
+  },
+  {
+    "symbol": "\\hookrightarrow",
+    "rendered": "\\hookrightarrow",
+    "template": "\\hookrightarrow"
+  },
+  {
+    "symbol": "\\hphantom",
+    "rendered": "a\\hphantom{bc}d",
+    "template": "a\\hphantom{}d"
+  },
+  {
+    "symbol": "\\hskip",
+    "rendered": "w\\hskip1em i\\hskip2em d",
+    "template": "w\\hskip1em i\\hskip2em d"
+  },
+  {
+    "symbol": "\\hslash",
+    "rendered": "\\hslash",
+    "template": "\\hslash"
+  },
+  {
+    "symbol": "\\huge",
+    "rendered": "\\huge huge",
+    "template": "\\huge huge"
+  },
+  {
+    "symbol": "\\Huge",
+    "rendered": "\\Huge Huge",
+    "template": "\\Huge Huge"
+  },
+  {
+    "symbol": "\\i",
+    "rendered": "\\text{\\i}",
+    "template": "\\text{\\i}"
+  },
+  {
+    "symbol": "\\iff",
+    "rendered": "A\\iff B",
+    "template": "A\\iff B"
+  },
+  {
+    "symbol": "\\iiint",
+    "rendered": "\\iiint",
+    "template": "\\iiint"
+  },
+  {
+    "symbol": "\\iint",
+    "rendered": "\\iint",
+    "template": "\\iint"
+  },
+  {
+    "symbol": "\\Im",
+    "rendered": "\\Im",
+    "template": "\\Im"
+  },
+  {
+    "symbol": "\\image",
+    "rendered": "\\image",
+    "template": "\\image"
+  },
+  {
+    "symbol": "\\imageof",
+    "rendered": "\\imageof",
+    "template": "\\imageof"
+  },
+  {
+    "symbol": "\\imath",
+    "rendered": "\\imath",
+    "template": "\\imath"
+  },
+  {
+    "symbol": "\\impliedby",
+    "rendered": "P\\impliedby Q",
+    "template": "P\\impliedby Q"
+  },
+  {
+    "symbol": "\\implies",
+    "rendered": "P\\implies Q",
+    "template": "P\\implies Q"
+  },
+  {
+    "symbol": "\\in",
+    "rendered": "\\in",
+    "template": "\\in"
+  },
+  {
+    "symbol": "\\inf",
+    "rendered": "\\inf",
+    "template": "\\inf"
+  },
+  {
+    "symbol": "\\infin",
+    "rendered": "\\infin",
+    "template": "\\infin"
+  },
+  {
+    "symbol": "\\infty",
+    "rendered": "\\infty",
+    "template": "\\infty"
+  },
+  {
+    "symbol": "\\injlim",
+    "rendered": "\\injlim",
+    "template": "\\injlim"
+  },
+  {
+    "symbol": "\\int",
+    "rendered": "\\int",
+    "template": "\\int"
+  },
+  {
+    "symbol": "\\intercal",
+    "rendered": "\\intercal",
+    "template": "\\intercal"
+  },
+  {
+    "symbol": "\\intop",
+    "rendered": "\\intop",
+    "template": "\\intop"
+  },
+  {
+    "symbol": "\\Iota",
+    "rendered": "\\Iota",
+    "template": "\\Iota"
+  },
+  {
+    "symbol": "\\iota",
+    "rendered": "\\iota",
+    "template": "\\iota"
+  },
+  {
+    "symbol": "\\isin",
+    "rendered": "\\isin",
+    "template": "\\isin"
+  },
+  {
+    "symbol": "\\it",
+    "rendered": "{\\it AaBb}",
+    "template": "{\\it AaBb}"
+  },
+  {
+    "symbol": "\\j",
+    "rendered": "\\text{\\j}",
+    "template": "\\text{\\j}"
+  },
+  {
+    "symbol": "\\jmath",
+    "rendered": "\\jmath",
+    "template": "\\jmath"
+  },
+  {
+    "symbol": "\\Join",
+    "rendered": "\\Join",
+    "template": "\\Join"
+  },
+  {
+    "symbol": "\\Kappa",
+    "rendered": "\\Kappa",
+    "template": "\\Kappa"
+  },
+  {
+    "symbol": "\\kappa",
+    "rendered": "\\kappa",
+    "template": "\\kappa"
+  },
+  {
+    "symbol": "\\KaTeX",
+    "rendered": "\\KaTeX",
+    "template": "\\KaTeX"
+  },
+  {
+    "symbol": "\\ker",
+    "rendered": "\\ker",
+    "template": "\\ker"
+  },
+  {
+    "symbol": "\\kern",
+    "rendered": "I\\kern-2.5pt R",
+    "template": "I\\kern-2.5pt R"
+  },
+  {
+    "symbol": "\\Ket",
+    "rendered": "\\Ket{\\psi}",
+    "template": "\\Ket{}"
+  },
+  {
+    "symbol": "\\ket",
+    "rendered": "\\ket{\\psi}",
+    "template": "\\ket{}"
+  },
+  {
+    "symbol": "\\Lambda",
+    "rendered": "\\Lambda",
+    "template": "\\Lambda"
+  },
+  {
+    "symbol": "\\lambda",
+    "rendered": "\\lambda",
+    "template": "\\lambda"
+  },
+  {
+    "symbol": "\\land",
+    "rendered": "\\land",
+    "template": "\\land"
+  },
+  {
+    "symbol": "\\lang",
+    "rendered": "\\lang A\\rangle",
+    "template": "\\lang A\\rangle"
+  },
+  {
+    "symbol": "\\langle",
+    "rendered": "\\langle A\\rangle",
+    "template": "\\langle A\\rangle"
+  },
+  {
+    "symbol": "\\Larr",
+    "rendered": "\\Larr",
+    "template": "\\Larr"
+  },
+  {
+    "symbol": "\\lArr",
+    "rendered": "\\lArr",
+    "template": "\\lArr"
+  },
+  {
+    "symbol": "\\larr",
+    "rendered": "\\larr",
+    "template": "\\larr"
+  },
+  {
+    "symbol": "\\large",
+    "rendered": "\\large large",
+    "template": "\\large large"
+  },
+  {
+    "symbol": "\\Large",
+    "rendered": "\\Large Large",
+    "template": "\\Large Large"
+  },
+  {
+    "symbol": "\\LARGE",
+    "rendered": "\\LARGE LARGE",
+    "template": "\\LARGE LARGE"
+  },
+  {
+    "symbol": "\\LaTeX",
+    "rendered": "\\LaTeX",
+    "template": "\\LaTeX"
+  },
+  {
+    "symbol": "\\lBrace",
+    "rendered": "\\lBrace",
+    "template": "\\lBrace"
+  },
+  {
+    "symbol": "\\lbrace",
+    "rendered": "\\lbrace",
+    "template": "\\lbrace"
+  },
+  {
+    "symbol": "\\lbrack",
+    "rendered": "\\lbrack",
+    "template": "\\lbrack"
+  },
+  {
+    "symbol": "\\lceil",
+    "rendered": "\\lceil",
+    "template": "\\lceil"
+  },
+  {
+    "symbol": "\\ldotp",
+    "rendered": "\\ldotp",
+    "template": "\\ldotp"
+  },
+  {
+    "symbol": "\\ldots",
+    "rendered": "\\ldots",
+    "template": "\\ldots"
+  },
+  {
+    "symbol": "\\le",
+    "rendered": "\\le",
+    "template": "\\le"
+  },
+  {
+    "symbol": "\\leadsto",
+    "rendered": "\\leadsto",
+    "template": "\\leadsto"
+  },
+  {
+    "symbol": "\\left",
+    "rendered": "\\left\\lbrace \\dfrac ab \\right.",
+    "template": "\\left\\lbrace \\dfrac ab \\right."
+  },
+  {
+    "symbol": "\\leftarrow",
+    "rendered": "\\leftarrow",
+    "template": "\\leftarrow"
+  },
+  {
+    "symbol": "\\Leftarrow",
+    "rendered": "\\Leftarrow",
+    "template": "\\Leftarrow"
+  },
+  {
+    "symbol": "\\leftarrowtail",
+    "rendered": "\\leftarrowtail",
+    "template": "\\leftarrowtail"
+  },
+  {
+    "symbol": "\\leftharpoondown",
+    "rendered": "\\leftharpoondown",
+    "template": "\\leftharpoondown"
+  },
+  {
+    "symbol": "\\leftharpoonup",
+    "rendered": "\\leftharpoonup",
+    "template": "\\leftharpoonup"
+  },
+  {
+    "symbol": "\\leftleftarrows",
+    "rendered": "\\leftleftarrows",
+    "template": "\\leftleftarrows"
+  },
+  {
+    "symbol": "\\Leftrightarrow",
+    "rendered": "\\Leftrightarrow",
+    "template": "\\Leftrightarrow"
+  },
+  {
+    "symbol": "\\leftrightarrow",
+    "rendered": "\\leftrightarrow",
+    "template": "\\leftrightarrow"
+  },
+  {
+    "symbol": "\\leftrightarrows",
+    "rendered": "\\leftrightarrows",
+    "template": "\\leftrightarrows"
+  },
+  {
+    "symbol": "\\leftrightharpoons",
+    "rendered": "\\leftrightharpoons",
+    "template": "\\leftrightharpoons"
+  },
+  {
+    "symbol": "\\leftrightsquigarrow",
+    "rendered": "\\leftrightsquigarrow",
+    "template": "\\leftrightsquigarrow"
+  },
+  {
+    "symbol": "\\leftthreetimes",
+    "rendered": "\\leftthreetimes",
+    "template": "\\leftthreetimes"
+  },
+  {
+    "symbol": "\\leq",
+    "rendered": "\\leq",
+    "template": "\\leq"
+  },
+  {
+    "symbol": "\\leqq",
+    "rendered": "\\leqq",
+    "template": "\\leqq"
+  },
+  {
+    "symbol": "\\leqslant",
+    "rendered": "\\leqslant",
+    "template": "\\leqslant"
+  },
+  {
+    "symbol": "\\lessapprox",
+    "rendered": "\\lessapprox",
+    "template": "\\lessapprox"
+  },
+  {
+    "symbol": "\\lessdot",
+    "rendered": "\\lessdot",
+    "template": "\\lessdot"
+  },
+  {
+    "symbol": "\\lesseqgtr",
+    "rendered": "\\lesseqgtr",
+    "template": "\\lesseqgtr"
+  },
+  {
+    "symbol": "\\lesseqqgtr",
+    "rendered": "\\lesseqqgtr",
+    "template": "\\lesseqqgtr"
+  },
+  {
+    "symbol": "\\lessgtr",
+    "rendered": "\\lessgtr",
+    "template": "\\lessgtr"
+  },
+  {
+    "symbol": "\\lesssim",
+    "rendered": "\\lesssim",
+    "template": "\\lesssim"
+  },
+  {
+    "symbol": "\\let",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\lfloor",
+    "rendered": "\\lfloor",
+    "template": "\\lfloor"
+  },
+  {
+    "symbol": "\\lg",
+    "rendered": "\\lg",
+    "template": "\\lg"
+  },
+  {
+    "symbol": "\\lgroup",
+    "rendered": "\\lgroup",
+    "template": "\\lgroup"
+  },
+  {
+    "symbol": "\\lhd",
+    "rendered": "\\lhd",
+    "template": "\\lhd"
+  },
+  {
+    "symbol": "\\lim",
+    "rendered": "\\lim",
+    "template": "\\lim"
+  },
+  {
+    "symbol": "\\liminf",
+    "rendered": "\\liminf",
+    "template": "\\liminf"
+  },
+  {
+    "symbol": "\\limits",
+    "rendered": "\\lim\\limits_x",
+    "template": "\\lim\\limits_x"
+  },
+  {
+    "symbol": "\\limsup",
+    "rendered": "\\limsup",
+    "template": "\\limsup"
+  },
+  {
+    "symbol": "\\ll",
+    "rendered": "\\ll",
+    "template": "\\ll"
+  },
+  {
+    "symbol": "\\llap",
+    "rendered": "{=}\\llap{/\\,}",
+    "template": "{=}\\llap{}"
+  },
+  {
+    "symbol": "\\llbracket",
+    "rendered": "\\llbracket",
+    "template": "\\llbracket"
+  },
+  {
+    "symbol": "\\llcorner",
+    "rendered": "\\llcorner",
+    "template": "\\llcorner"
+  },
+  {
+    "symbol": "\\Lleftarrow",
+    "rendered": "\\Lleftarrow",
+    "template": "\\Lleftarrow"
+  },
+  {
+    "symbol": "\\lll",
+    "rendered": "\\lll",
+    "template": "\\lll"
+  },
+  {
+    "symbol": "\\llless",
+    "rendered": "\\llless",
+    "template": "\\llless"
+  },
+  {
+    "symbol": "\\lmoustache",
+    "rendered": "\\lmoustache",
+    "template": "\\lmoustache"
+  },
+  {
+    "symbol": "\\ln",
+    "rendered": "\\ln",
+    "template": "\\ln"
+  },
+  {
+    "symbol": "\\lnapprox",
+    "rendered": "\\lnapprox",
+    "template": "\\lnapprox"
+  },
+  {
+    "symbol": "\\lneq",
+    "rendered": "\\lneq",
+    "template": "\\lneq"
+  },
+  {
+    "symbol": "\\lneqq",
+    "rendered": "\\lneqq",
+    "template": "\\lneqq"
+  },
+  {
+    "symbol": "\\lnot",
+    "rendered": "\\lnot",
+    "template": "\\lnot"
+  },
+  {
+    "symbol": "\\lnsim",
+    "rendered": "\\lnsim",
+    "template": "\\lnsim"
+  },
+  {
+    "symbol": "\\log",
+    "rendered": "\\log",
+    "template": "\\log"
+  },
+  {
+    "symbol": "\\long",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\Longleftarrow",
+    "rendered": "\\Longleftarrow",
+    "template": "\\Longleftarrow"
+  },
+  {
+    "symbol": "\\longleftarrow",
+    "rendered": "\\longleftarrow",
+    "template": "\\longleftarrow"
+  },
+  {
+    "symbol": "\\Longleftrightarrow",
+    "rendered": "\\Longleftrightarrow",
+    "template": "\\Longleftrightarrow"
+  },
+  {
+    "symbol": "\\longleftrightarrow",
+    "rendered": "\\longleftrightarrow",
+    "template": "\\longleftrightarrow"
+  },
+  {
+    "symbol": "\\longmapsto",
+    "rendered": "\\longmapsto",
+    "template": "\\longmapsto"
+  },
+  {
+    "symbol": "\\Longrightarrow",
+    "rendered": "\\Longrightarrow",
+    "template": "\\Longrightarrow"
+  },
+  {
+    "symbol": "\\longrightarrow",
+    "rendered": "\\longrightarrow",
+    "template": "\\longrightarrow"
+  },
+  {
+    "symbol": "\\looparrowleft",
+    "rendered": "\\looparrowleft",
+    "template": "\\looparrowleft"
+  },
+  {
+    "symbol": "\\looparrowright",
+    "rendered": "\\looparrowright",
+    "template": "\\looparrowright"
+  },
+  {
+    "symbol": "\\lor",
+    "rendered": "\\lor",
+    "template": "\\lor"
+  },
+  {
+    "symbol": "\\lozenge",
+    "rendered": "\\lozenge",
+    "template": "\\lozenge"
+  },
+  {
+    "symbol": "\\lparen",
+    "rendered": "\\lparen",
+    "template": "\\lparen"
+  },
+  {
+    "symbol": "\\Lrarr",
+    "rendered": "\\Lrarr",
+    "template": "\\Lrarr"
+  },
+  {
+    "symbol": "\\lrArr",
+    "rendered": "\\lrArr",
+    "template": "\\lrArr"
+  },
+  {
+    "symbol": "\\lrarr",
+    "rendered": "\\lrarr",
+    "template": "\\lrarr"
+  },
+  {
+    "symbol": "\\lrcorner",
+    "rendered": "\\lrcorner",
+    "template": "\\lrcorner"
+  },
+  {
+    "symbol": "\\lq",
+    "rendered": "\\lq",
+    "template": "\\lq"
+  },
+  {
+    "symbol": "\\Lsh",
+    "rendered": "\\Lsh",
+    "template": "\\Lsh"
+  },
+  {
+    "symbol": "\\lt",
+    "rendered": "\\lt",
+    "template": "\\lt"
+  },
+  {
+    "symbol": "\\ltimes",
+    "rendered": "\\ltimes",
+    "template": "\\ltimes"
+  },
+  {
+    "symbol": "\\lVert",
+    "rendered": "\\lVert",
+    "template": "\\lVert"
+  },
+  {
+    "symbol": "\\lvert",
+    "rendered": "\\lvert",
+    "template": "\\lvert"
+  },
+  {
+    "symbol": "\\lvertneqq",
+    "rendered": "\\lvertneqq",
+    "template": "\\lvertneqq"
+  },
+  {
+    "symbol": "\\maltese",
+    "rendered": "\\maltese",
+    "template": "\\maltese"
+  },
+  {
+    "symbol": "\\mapsto",
+    "rendered": "\\mapsto",
+    "template": "\\mapsto"
+  },
+  {
+    "symbol": "\\mathbb",
+    "rendered": "\\mathbb{AB}",
+    "template": "\\mathbb{}"
+  },
+  {
+    "symbol": "\\mathbf",
+    "rendered": "\\mathbf{AaBb123}",
+    "template": "\\mathbf{}"
+  },
+  {
+    "symbol": "\\mathbin",
+    "rendered": "a\\mathbin{!}b",
+    "template": "a\\mathbin{}b"
+  },
+  {
+    "symbol": "\\mathcal",
+    "rendered": "\\mathcal{AaBb123}",
+    "template": "\\mathcal{}"
+  },
+  {
+    "symbol": "\\mathchoice",
+    "rendered": "a\\mathchoice{\\,}{\\,\\,}{\\,\\,\\,}{\\,\\,\\,\\,}b",
+    "template": "a\\mathchoice{}{}{\\,\\,\\,}{\\,\\,\\,\\,}b"
+  },
+  {
+    "symbol": "\\mathclap",
+    "rendered": "\\displaystyle\\sum_{\\mathclap{1\\le i\\le n}} x_{i}",
+    "template": "\\displaystyle\\sum_{\\mathclap{}} x_{i}"
+  },
+  {
+    "symbol": "\\mathclose",
+    "rendered": "a + (b\\mathclose\\gt + c",
+    "template": "a + (b\\mathclose\\gt + c"
+  },
+  {
+    "symbol": "\\mathellipsis",
+    "rendered": "\\mathellipsis",
+    "template": "\\mathellipsis"
+  },
+  {
+    "symbol": "\\mathfrak",
+    "rendered": "\\mathfrak{AaBb}",
+    "template": "\\mathfrak{}"
+  },
+  {
+    "symbol": "\\mathinner",
+    "rendered": "ab\\mathinner{\\text{inside}}cd",
+    "template": "ab\\mathinner{}}cd"
+  },
+  {
+    "symbol": "\\mathit",
+    "rendered": "\\mathit{AaBb}",
+    "template": "\\mathit{}"
+  },
+  {
+    "symbol": "\\mathllap",
+    "rendered": "{=}\\mathllap{/\\,}",
+    "template": "{=}\\mathllap{}"
+  },
+  {
+    "symbol": "\\mathnormal",
+    "rendered": "\\mathnormal{AaBb}",
+    "template": "\\mathnormal{}"
+  },
+  {
+    "symbol": "\\mathop",
+    "rendered": "\\mathop{\\star}_a^b",
+    "template": "\\mathop{}_a^b"
+  },
+  {
+    "symbol": "\\mathopen",
+    "rendered": "a + \\mathopen\\lt b) + c",
+    "template": "a + \\mathopen\\lt b) + c"
+  },
+  {
+    "symbol": "\\mathord",
+    "rendered": "1\\mathord{,}234{,}567",
+    "template": "1\\mathord{}234{,}567"
+  },
+  {
+    "symbol": "\\mathpunct",
+    "rendered": "A\\mathpunct{-}B",
+    "template": "A\\mathpunct{}B"
+  },
+  {
+    "symbol": "\\mathrel",
+    "rendered": "a \\mathrel{\\#} b",
+    "template": "a \\mathrel{} b"
+  },
+  {
+    "symbol": "\\mathrlap",
+    "rendered": "\\mathrlap{\\,/}{=}",
+    "template": "\\mathrlap{}{}"
+  },
+  {
+    "symbol": "\\mathring",
+    "rendered": "\\mathring{a}",
+    "template": "\\mathring{}"
+  },
+  {
+    "symbol": "\\mathrm",
+    "rendered": "\\mathrm{AaBb123}",
+    "template": "\\mathrm{}"
+  },
+  {
+    "symbol": "\\mathscr",
+    "rendered": "\\mathscr{AB}",
+    "template": "\\mathscr{}"
+  },
+  {
+    "symbol": "\\mathsf",
+    "rendered": "\\mathsf{AaBb123}",
+    "template": "\\mathsf{}"
+  },
+  {
+    "symbol": "\\mathsterling",
+    "rendered": "\\mathsterling",
+    "template": "\\mathsterling"
+  },
+  {
+    "symbol": "\\mathstrut",
+    "rendered": "\\sqrt{\\mathstrut a}",
+    "template": "\\sqrt{\\mathstrut a}"
+  },
+  {
+    "symbol": "\\mathtt",
+    "rendered": "\\mathtt{AaBb123}",
+    "template": "\\mathtt{}"
+  },
+  {
+    "symbol": "\\max",
+    "rendered": "\\max",
+    "template": "\\max"
+  },
+  {
+    "symbol": "\\measuredangle",
+    "rendered": "\\measuredangle",
+    "template": "\\measuredangle"
+  },
+  {
+    "symbol": "\\medspace",
+    "rendered": "a\\medspace b",
+    "template": "a\\medspace b"
+  },
+  {
+    "symbol": "\\mho",
+    "rendered": "\\mho",
+    "template": "\\mho"
+  },
+  {
+    "symbol": "\\mid",
+    "rendered": "\\{x∈ℝ\\mid x>0\\}",
+    "template": "\\{x∈ℝ\\mid x>0\\}"
+  },
+  {
+    "symbol": "\\middle",
+    "rendered": "P\\left(A\\middle\\vert B\\right)",
+    "template": "P\\left(A\\middle\\vert B\\right)"
+  },
+  {
+    "symbol": "\\min",
+    "rendered": "\\min",
+    "template": "\\min"
+  },
+  {
+    "symbol": "\\minuscolon",
+    "rendered": "\\minuscolon",
+    "template": "\\minuscolon"
+  },
+  {
+    "symbol": "\\minuscoloncolon",
+    "rendered": "\\minuscoloncolon",
+    "template": "\\minuscoloncolon"
+  },
+  {
+    "symbol": "\\minuso",
+    "rendered": "\\minuso",
+    "template": "\\minuso"
+  },
+  {
+    "symbol": "\\mkern",
+    "rendered": "a\\mkern18mu b",
+    "template": "a\\mkern18mu b"
+  },
+  {
+    "symbol": "\\mod",
+    "rendered": "3\\equiv 5 \\mod 2",
+    "template": "3\\equiv 5 \\mod 2"
+  },
+  {
+    "symbol": "\\models",
+    "rendered": "\\models",
+    "template": "\\models"
+  },
+  {
+    "symbol": "\\mp",
+    "rendered": "\\mp",
+    "template": "\\mp"
+  },
+  {
+    "symbol": "\\mskip",
+    "rendered": "a\\mskip{10mu}b",
+    "template": "a\\mskip{}b"
+  },
+  {
+    "symbol": "\\Mu",
+    "rendered": "\\Mu",
+    "template": "\\Mu"
+  },
+  {
+    "symbol": "\\mu",
+    "rendered": "\\mu",
+    "template": "\\mu"
+  },
+  {
+    "symbol": "\\multimap",
+    "rendered": "\\multimap",
+    "template": "\\multimap"
+  },
+  {
+    "symbol": "\\N",
+    "rendered": "\\N",
+    "template": "\\N"
+  },
+  {
+    "symbol": "\\nabla",
+    "rendered": "\\nabla",
+    "template": "\\nabla"
+  },
+  {
+    "symbol": "\\natnums",
+    "rendered": "\\natnums",
+    "template": "\\natnums"
+  },
+  {
+    "symbol": "\\natural",
+    "rendered": "\\natural",
+    "template": "\\natural"
+  },
+  {
+    "symbol": "\\negmedspace",
+    "rendered": "a\\negmedspace b",
+    "template": "a\\negmedspace b"
+  },
+  {
+    "symbol": "\\ncong",
+    "rendered": "\\ncong",
+    "template": "\\ncong"
+  },
+  {
+    "symbol": "\\ne",
+    "rendered": "\\ne",
+    "template": "\\ne"
+  },
+  {
+    "symbol": "\\nearrow",
+    "rendered": "\\nearrow",
+    "template": "\\nearrow"
+  },
+  {
+    "symbol": "\\neg",
+    "rendered": "\\neg",
+    "template": "\\neg"
+  },
+  {
+    "symbol": "\\negthickspace",
+    "rendered": "a\\negthickspace b",
+    "template": "a\\negthickspace b"
+  },
+  {
+    "symbol": "\\negthinspace",
+    "rendered": "a\\negthinspace b",
+    "template": "a\\negthinspace b"
+  },
+  {
+    "symbol": "\\neq",
+    "rendered": "\\neq",
+    "template": "\\neq"
+  },
+  {
+    "symbol": "\\newcommand",
+    "rendered": "\\newcommand\\chk{\\checkmark} \\chk",
+    "template": "\\newcommand\\chk{\\checkmark} \\chk"
+  },
+  {
+    "symbol": "\\newline",
+    "rendered": "a\\newline b",
+    "template": "a\\newline b"
+  },
+  {
+    "symbol": "\\nexists",
+    "rendered": "\\nexists",
+    "template": "\\nexists"
+  },
+  {
+    "symbol": "\\ngeq",
+    "rendered": "\\ngeq",
+    "template": "\\ngeq"
+  },
+  {
+    "symbol": "\\ngeqq",
+    "rendered": "\\ngeqq",
+    "template": "\\ngeqq"
+  },
+  {
+    "symbol": "\\ngeqslant",
+    "rendered": "\\ngeqslant",
+    "template": "\\ngeqslant"
+  },
+  {
+    "symbol": "\\ngtr",
+    "rendered": "\\ngtr",
+    "template": "\\ngtr"
+  },
+  {
+    "symbol": "\\ni",
+    "rendered": "\\ni",
+    "template": "\\ni"
+  },
+  {
+    "symbol": "\\nleftarrow",
+    "rendered": "\\nleftarrow",
+    "template": "\\nleftarrow"
+  },
+  {
+    "symbol": "\\nLeftarrow",
+    "rendered": "\\nLeftarrow",
+    "template": "\\nLeftarrow"
+  },
+  {
+    "symbol": "\\nLeftrightarrow",
+    "rendered": "\\nLeftrightarrow",
+    "template": "\\nLeftrightarrow"
+  },
+  {
+    "symbol": "\\nleftrightarrow",
+    "rendered": "\\nleftrightarrow",
+    "template": "\\nleftrightarrow"
+  },
+  {
+    "symbol": "\\nleq",
+    "rendered": "\\nleq",
+    "template": "\\nleq"
+  },
+  {
+    "symbol": "\\nleqq",
+    "rendered": "\\nleqq",
+    "template": "\\nleqq"
+  },
+  {
+    "symbol": "\\nleqslant",
+    "rendered": "\\nleqslant",
+    "template": "\\nleqslant"
+  },
+  {
+    "symbol": "\\nless",
+    "rendered": "\\nless",
+    "template": "\\nless"
+  },
+  {
+    "symbol": "\\nmid",
+    "rendered": "\\nmid",
+    "template": "\\nmid"
+  },
+  {
+    "symbol": "\\nobreak",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\nobreakspace",
+    "rendered": "a\\nobreakspace b",
+    "template": "a\\nobreakspace b"
+  },
+  {
+    "symbol": "\\noexpand",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\nolimits",
+    "rendered": "\\lim\\nolimits_x",
+    "template": "\\lim\\nolimits_x"
+  },
+  {
+    "symbol": "\\nonumber",
+    "rendered": "\\nonumber\\\\d+e&=f",
+    "template": "\\nonumber\\\\d+e&=f"
+  },
+  {
+    "symbol": "\\normalsize",
+    "rendered": "\\normalsize normalsize",
+    "template": "\\normalsize normalsize"
+  },
+  {
+    "symbol": "\\not",
+    "rendered": "\\not =",
+    "template": "\\not ="
+  },
+  {
+    "symbol": "\\notag",
+    "rendered": "\\notag\\\\d+e&=f",
+    "template": "\\notag\\\\d+e&=f"
+  },
+  {
+    "symbol": "\\notin",
+    "rendered": "\\notin",
+    "template": "\\notin"
+  },
+  {
+    "symbol": "\\notni",
+    "rendered": "\\notni",
+    "template": "\\notni"
+  },
+  {
+    "symbol": "\\nparallel",
+    "rendered": "\\nparallel",
+    "template": "\\nparallel"
+  },
+  {
+    "symbol": "\\nprec",
+    "rendered": "\\nprec",
+    "template": "\\nprec"
+  },
+  {
+    "symbol": "\\npreceq",
+    "rendered": "\\npreceq",
+    "template": "\\npreceq"
+  },
+  {
+    "symbol": "\\nRightarrow",
+    "rendered": "\\nRightarrow",
+    "template": "\\nRightarrow"
+  },
+  {
+    "symbol": "\\nrightarrow",
+    "rendered": "\\nrightarrow",
+    "template": "\\nrightarrow"
+  },
+  {
+    "symbol": "\\nshortmid",
+    "rendered": "\\nshortmid",
+    "template": "\\nshortmid"
+  },
+  {
+    "symbol": "\\nshortparallel",
+    "rendered": "\\nshortparallel",
+    "template": "\\nshortparallel"
+  },
+  {
+    "symbol": "\\nsim",
+    "rendered": "\\nsim",
+    "template": "\\nsim"
+  },
+  {
+    "symbol": "\\nsubseteq",
+    "rendered": "\\nsubseteq",
+    "template": "\\nsubseteq"
+  },
+  {
+    "symbol": "\\nsubseteqq",
+    "rendered": "\\nsubseteqq",
+    "template": "\\nsubseteqq"
+  },
+  {
+    "symbol": "\\nsucc",
+    "rendered": "\\nsucc",
+    "template": "\\nsucc"
+  },
+  {
+    "symbol": "\\nsucceq",
+    "rendered": "\\nsucceq",
+    "template": "\\nsucceq"
+  },
+  {
+    "symbol": "\\nsupseteq",
+    "rendered": "\\nsupseteq",
+    "template": "\\nsupseteq"
+  },
+  {
+    "symbol": "\\nsupseteqq",
+    "rendered": "\\nsupseteqq",
+    "template": "\\nsupseteqq"
+  },
+  {
+    "symbol": "\\ntriangleleft",
+    "rendered": "\\ntriangleleft",
+    "template": "\\ntriangleleft"
+  },
+  {
+    "symbol": "\\ntrianglelefteq",
+    "rendered": "\\ntrianglelefteq",
+    "template": "\\ntrianglelefteq"
+  },
+  {
+    "symbol": "\\ntriangleright",
+    "rendered": "\\ntriangleright",
+    "template": "\\ntriangleright"
+  },
+  {
+    "symbol": "\\ntrianglerighteq",
+    "rendered": "\\ntrianglerighteq",
+    "template": "\\ntrianglerighteq"
+  },
+  {
+    "symbol": "\\Nu",
+    "rendered": "\\Nu",
+    "template": "\\Nu"
+  },
+  {
+    "symbol": "\\nu",
+    "rendered": "\\nu",
+    "template": "\\nu"
+  },
+  {
+    "symbol": "\\nVDash",
+    "rendered": "\\nVDash",
+    "template": "\\nVDash"
+  },
+  {
+    "symbol": "\\nVdash",
+    "rendered": "\\nVdash",
+    "template": "\\nVdash"
+  },
+  {
+    "symbol": "\\nvDash",
+    "rendered": "\\nvDash",
+    "template": "\\nvDash"
+  },
+  {
+    "symbol": "\\nvdash",
+    "rendered": "\\nvdash",
+    "template": "\\nvdash"
+  },
+  {
+    "symbol": "\\nwarrow",
+    "rendered": "\\nwarrow",
+    "template": "\\nwarrow"
+  },
+  {
+    "symbol": "\\O",
+    "rendered": "\\text{\\O}",
+    "template": "\\text{\\O}"
+  },
+  {
+    "symbol": "\\o",
+    "rendered": "\\text{\\o}",
+    "template": "\\text{\\o}"
+  },
+  {
+    "symbol": "\\odot",
+    "rendered": "\\odot",
+    "template": "\\odot"
+  },
+  {
+    "symbol": "\\OE",
+    "rendered": "\\text{\\OE}",
+    "template": "\\text{\\OE}"
+  },
+  {
+    "symbol": "\\oe",
+    "rendered": "\\text{\\oe}",
+    "template": "\\text{\\oe}"
+  },
+  {
+    "symbol": "\\oiiint",
+    "rendered": "\\oiiint",
+    "template": "\\oiiint"
+  },
+  {
+    "symbol": "\\oiint",
+    "rendered": "\\oiint",
+    "template": "\\oiint"
+  },
+  {
+    "symbol": "\\oint",
+    "rendered": "\\oint",
+    "template": "\\oint"
+  },
+  {
+    "symbol": "\\omega",
+    "rendered": "\\omega",
+    "template": "\\omega"
+  },
+  {
+    "symbol": "\\Omega",
+    "rendered": "\\Omega",
+    "template": "\\Omega"
+  },
+  {
+    "symbol": "\\Omicron",
+    "rendered": "\\Omicron",
+    "template": "\\Omicron"
+  },
+  {
+    "symbol": "\\omicron",
+    "rendered": "\\omicron",
+    "template": "\\omicron"
+  },
+  {
+    "symbol": "\\ominus",
+    "rendered": "\\ominus",
+    "template": "\\ominus"
+  },
+  {
+    "symbol": "\\operatorname",
+    "rendered": "\\operatorname{asin} x",
+    "template": "\\operatorname{} x"
+  },
+  {
+    "symbol": "\\operatorname\\*",
+    "rendered": "\\operatorname*{asin}\\limits_y x",
+    "template": "\\operatorname*{}\\limits_y x"
+  },
+  {
+    "symbol": "\\operatornamewithlimits",
+    "rendered": "\\operatornamewithlimits{asin}\\limits_y x",
+    "template": "\\operatornamewithlimits{}\\limits_y x"
+  },
+  {
+    "symbol": "\\oplus",
+    "rendered": "\\oplus",
+    "template": "\\oplus"
+  },
+  {
+    "symbol": "\\origof",
+    "rendered": "\\origof",
+    "template": "\\origof"
+  },
+  {
+    "symbol": "\\oslash",
+    "rendered": "\\oslash",
+    "template": "\\oslash"
+  },
+  {
+    "symbol": "\\otimes",
+    "rendered": "\\otimes",
+    "template": "\\otimes"
+  },
+  {
+    "symbol": "\\over",
+    "rendered": "{a+1 \\over b+2}+c",
+    "template": "{a+1 \\over b+2}+c"
+  },
+  {
+    "symbol": "\\overbrace",
+    "rendered": "\\overbrace{x+⋯+x}^{n\\text{ times}}",
+    "template": "\\overbrace{}^{n\\text{ times}}"
+  },
+  {
+    "symbol": "\\overgroup",
+    "rendered": "\\overgroup{AB}",
+    "template": "\\overgroup{}"
+  },
+  {
+    "symbol": "\\overleftarrow",
+    "rendered": "\\overleftarrow{AB}",
+    "template": "\\overleftarrow{}"
+  },
+  {
+    "symbol": "\\overleftharpoon",
+    "rendered": "\\overleftharpoon{AB}",
+    "template": "\\overleftharpoon{}"
+  },
+  {
+    "symbol": "\\overleftrightarrow",
+    "rendered": "\\overleftrightarrow{AB}",
+    "template": "\\overleftrightarrow{}"
+  },
+  {
+    "symbol": "\\overline",
+    "rendered": "\\overline{\\text{a long argument}}",
+    "template": "\\overline{}}"
+  },
+  {
+    "symbol": "\\overlinesegment",
+    "rendered": "\\overlinesegment{AB}",
+    "template": "\\overlinesegment{}"
+  },
+  {
+    "symbol": "\\Overrightarrow",
+    "rendered": "\\Overrightarrow{AB}",
+    "template": "\\Overrightarrow{}"
+  },
+  {
+    "symbol": "\\overrightarrow",
+    "rendered": "\\overrightarrow{AB}",
+    "template": "\\overrightarrow{}"
+  },
+  {
+    "symbol": "\\overrightharpoon",
+    "rendered": "\\overrightharpoon{ac}",
+    "template": "\\overrightharpoon{}"
+  },
+  {
+    "symbol": "\\overset",
+    "rendered": "\\overset{!}{=}",
+    "template": "\\overset{}{}"
+  },
+  {
+    "symbol": "\\owns",
+    "rendered": "\\owns",
+    "template": "\\owns"
+  },
+  {
+    "symbol": "\\P",
+    "rendered": "\\text{\\P}",
+    "template": "\\text{\\P}"
+  },
+  {
+    "symbol": "\\parallel",
+    "rendered": "\\parallel",
+    "template": "\\parallel"
+  },
+  {
+    "symbol": "\\partial",
+    "rendered": "\\partial",
+    "template": "\\partial"
+  },
+  {
+    "symbol": "\\perp",
+    "rendered": "\\perp",
+    "template": "\\perp"
+  },
+  {
+    "symbol": "\\phantom",
+    "rendered": "\\Gamma^{\\phantom{i}j}_{i\\phantom{j}k}",
+    "template": "\\Gamma^{\\phantom{}j}_{i\\phantom{}k}"
+  },
+  {
+    "symbol": "\\phase",
+    "rendered": "\\phase{-78^\\circ}",
+    "template": "\\phase{}"
+  },
+  {
+    "symbol": "\\Phi",
+    "rendered": "\\Phi",
+    "template": "\\Phi"
+  },
+  {
+    "symbol": "\\phi",
+    "rendered": "\\phi",
+    "template": "\\phi"
+  },
+  {
+    "symbol": "\\Pi",
+    "rendered": "\\Pi",
+    "template": "\\Pi"
+  },
+  {
+    "symbol": "\\pi",
+    "rendered": "\\pi",
+    "template": "\\pi"
+  },
+  {
+    "symbol": "\\pitchfork",
+    "rendered": "\\pitchfork",
+    "template": "\\pitchfork"
+  },
+  {
+    "symbol": "\\plim",
+    "rendered": "\\plim",
+    "template": "\\plim"
+  },
+  {
+    "symbol": "\\plusmn",
+    "rendered": "\\plusmn",
+    "template": "\\plusmn"
+  },
+  {
+    "symbol": "\\pm",
+    "rendered": "\\pm",
+    "template": "\\pm"
+  },
+  {
+    "symbol": "\\pmb",
+    "rendered": "\\pmb{\\mu}",
+    "template": "\\pmb{}"
+  },
+  {
+    "symbol": "\\pmod",
+    "rendered": "x\\pmod a",
+    "template": "x\\pmod a"
+  },
+  {
+    "symbol": "\\pod",
+    "rendered": "x \\pod a",
+    "template": "x \\pod a"
+  },
+  {
+    "symbol": "\\pounds",
+    "rendered": "\\pounds",
+    "template": "\\pounds"
+  },
+  {
+    "symbol": "\\Pr",
+    "rendered": "\\Pr",
+    "template": "\\Pr"
+  },
+  {
+    "symbol": "\\prec",
+    "rendered": "\\prec",
+    "template": "\\prec"
+  },
+  {
+    "symbol": "\\precapprox",
+    "rendered": "\\precapprox",
+    "template": "\\precapprox"
+  },
+  {
+    "symbol": "\\preccurlyeq",
+    "rendered": "\\preccurlyeq",
+    "template": "\\preccurlyeq"
+  },
+  {
+    "symbol": "\\preceq",
+    "rendered": "\\preceq",
+    "template": "\\preceq"
+  },
+  {
+    "symbol": "\\precnapprox",
+    "rendered": "\\precnapprox",
+    "template": "\\precnapprox"
+  },
+  {
+    "symbol": "\\precneqq",
+    "rendered": "\\precneqq",
+    "template": "\\precneqq"
+  },
+  {
+    "symbol": "\\precnsim",
+    "rendered": "\\precnsim",
+    "template": "\\precnsim"
+  },
+  {
+    "symbol": "\\precsim",
+    "rendered": "\\precsim",
+    "template": "\\precsim"
+  },
+  {
+    "symbol": "\\prime",
+    "rendered": "\\prime",
+    "template": "\\prime"
+  },
+  {
+    "symbol": "\\prod",
+    "rendered": "\\prod",
+    "template": "\\prod"
+  },
+  {
+    "symbol": "\\projlim",
+    "rendered": "\\projlim",
+    "template": "\\projlim"
+  },
+  {
+    "symbol": "\\propto",
+    "rendered": "\\propto",
+    "template": "\\propto"
+  },
+  {
+    "symbol": "\\providecommand",
+    "rendered": "\\providecommand\\greet{\\text{Hello}} \\greet",
+    "template": "\\providecommand\\greet{\\text{Hello}} \\greet"
+  },
+  {
+    "symbol": "\\psi",
+    "rendered": "\\psi",
+    "template": "\\psi"
+  },
+  {
+    "symbol": "\\Psi",
+    "rendered": "\\Psi",
+    "template": "\\Psi"
+  },
+  {
+    "symbol": "\\pu",
+    "rendered": "{123~\\mathchoice{\\textstyle\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}{\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}{\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}{\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}}",
+    "template": "{123~\\mathchoice{\\textstyle\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}{\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}{\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}{\\frac{\\mathrm{kJ}}{\\mathrm{mol}}}}"
+  },
+  {
+    "symbol": "\\qquad",
+    "rendered": "a\\qquad\\qquad{b}",
+    "template": "a\\qquad\\qquad{}"
+  },
+  {
+    "symbol": "\\quad",
+    "rendered": "a\\quad\\quad{b}",
+    "template": "a\\quad\\quad{}"
+  },
+  {
+    "symbol": "\\R",
+    "rendered": "\\R",
+    "template": "\\R"
+  },
+  {
+    "symbol": "\\r",
+    "rendered": "\\text{\\r{a}}",
+    "template": "\\text{\\r{}}"
+  },
+  {
+    "symbol": "\\raisebox",
+    "rendered": "h\\raisebox{2pt}{ighe}r",
+    "template": "h\\raisebox{}{}r"
+  },
+  {
+    "symbol": "\\rang",
+    "rendered": "\\langle A\\rang",
+    "template": "\\langle A\\rang"
+  },
+  {
+    "symbol": "\\rangle",
+    "rendered": "\\langle A\\rangle",
+    "template": "\\langle A\\rangle"
+  },
+  {
+    "symbol": "\\Rarr",
+    "rendered": "\\Rarr",
+    "template": "\\Rarr"
+  },
+  {
+    "symbol": "\\rArr",
+    "rendered": "\\rArr",
+    "template": "\\rArr"
+  },
+  {
+    "symbol": "\\rarr",
+    "rendered": "\\rarr",
+    "template": "\\rarr"
+  },
+  {
+    "symbol": "\\ratio",
+    "rendered": "\\ratio",
+    "template": "\\ratio"
+  },
+  {
+    "symbol": "\\rBrace",
+    "rendered": "\\rBrace",
+    "template": "\\rBrace"
+  },
+  {
+    "symbol": "\\rbrace",
+    "rendered": "\\rbrace",
+    "template": "\\rbrace"
+  },
+  {
+    "symbol": "\\rbrack",
+    "rendered": "\\rbrack",
+    "template": "\\rbrack"
+  },
+  {
+    "symbol": "\\rceil",
+    "rendered": "\\rceil",
+    "template": "\\rceil"
+  },
+  {
+    "symbol": "\\Re",
+    "rendered": "\\Re",
+    "template": "\\Re"
+  },
+  {
+    "symbol": "\\real",
+    "rendered": "\\real",
+    "template": "\\real"
+  },
+  {
+    "symbol": "\\Reals",
+    "rendered": "\\Reals",
+    "template": "\\Reals"
+  },
+  {
+    "symbol": "\\reals",
+    "rendered": "\\reals",
+    "template": "\\reals"
+  },
+  {
+    "symbol": "\\relax",
+    "rendered": "",
+    "template": ""
+  },
+  {
+    "symbol": "\\renewcommand",
+    "rendered": "\\def\\hail{Hi!}\\renewcommand\\hail{\\text{Ahoy!}} \\hail",
+    "template": "\\def\\hail{Hi!}\\renewcommand\\hail{\\text{Ahoy!}} \\hail"
+  },
+  {
+    "symbol": "\\restriction",
+    "rendered": "\\restriction",
+    "template": "\\restriction"
+  },
+  {
+    "symbol": "\\rfloor",
+    "rendered": "\\rfloor",
+    "template": "\\rfloor"
+  },
+  {
+    "symbol": "\\rgroup",
+    "rendered": "\\rgroup",
+    "template": "\\rgroup"
+  },
+  {
+    "symbol": "\\rhd",
+    "rendered": "\\rhd",
+    "template": "\\rhd"
+  },
+  {
+    "symbol": "\\Rho",
+    "rendered": "\\Rho",
+    "template": "\\Rho"
+  },
+  {
+    "symbol": "\\rho",
+    "rendered": "\\rho",
+    "template": "\\rho"
+  },
+  {
+    "symbol": "\\right",
+    "rendered": "\\left.\\dfrac a b\\right)",
+    "template": "\\left.\\dfrac a b\\right)"
+  },
+  {
+    "symbol": "\\Rightarrow",
+    "rendered": "\\Rightarrow",
+    "template": "\\Rightarrow"
+  },
+  {
+    "symbol": "\\rightarrow",
+    "rendered": "\\rightarrow",
+    "template": "\\rightarrow"
+  },
+  {
+    "symbol": "\\rightarrowtail",
+    "rendered": "\\rightarrowtail",
+    "template": "\\rightarrowtail"
+  },
+  {
+    "symbol": "\\rightharpoondown",
+    "rendered": "\\rightharpoondown",
+    "template": "\\rightharpoondown"
+  },
+  {
+    "symbol": "\\rightharpoonup",
+    "rendered": "\\rightharpoonup",
+    "template": "\\rightharpoonup"
+  },
+  {
+    "symbol": "\\rightleftarrows",
+    "rendered": "\\rightleftarrows",
+    "template": "\\rightleftarrows"
+  },
+  {
+    "symbol": "\\rightleftharpoons",
+    "rendered": "\\rightleftharpoons",
+    "template": "\\rightleftharpoons"
+  },
+  {
+    "symbol": "\\rightrightarrows",
+    "rendered": "\\rightrightarrows",
+    "template": "\\rightrightarrows"
+  },
+  {
+    "symbol": "\\rightsquigarrow",
+    "rendered": "\\rightsquigarrow",
+    "template": "\\rightsquigarrow"
+  },
+  {
+    "symbol": "\\rightthreetimes",
+    "rendered": "\\rightthreetimes",
+    "template": "\\rightthreetimes"
+  },
+  {
+    "symbol": "\\risingdotseq",
+    "rendered": "\\risingdotseq",
+    "template": "\\risingdotseq"
+  },
+  {
+    "symbol": "\\rlap",
+    "rendered": "\\rlap{\\,/}{=}",
+    "template": "\\rlap{}{}"
+  },
+  {
+    "symbol": "\\rm",
+    "rendered": "\\rm AaBb12",
+    "template": "\\rm AaBb12"
+  },
+  {
+    "symbol": "\\rmoustache",
+    "rendered": "\\rmoustache",
+    "template": "\\rmoustache"
+  },
+  {
+    "symbol": "\\rparen",
+    "rendered": "\\rparen",
+    "template": "\\rparen"
+  },
+  {
+    "symbol": "\\rq",
+    "rendered": "\\rq",
+    "template": "\\rq"
+  },
+  {
+    "symbol": "\\rrbracket",
+    "rendered": "\\rrbracket",
+    "template": "\\rrbracket"
+  },
+  {
+    "symbol": "\\Rrightarrow",
+    "rendered": "\\Rrightarrow",
+    "template": "\\Rrightarrow"
+  },
+  {
+    "symbol": "\\Rsh",
+    "rendered": "\\Rsh",
+    "template": "\\Rsh"
+  },
+  {
+    "symbol": "\\rtimes",
+    "rendered": "\\rtimes",
+    "template": "\\rtimes"
+  },
+  {
+    "symbol": "\\rule",
+    "rendered": "x\\rule[6pt]{2ex}{1ex}x",
+    "template": "x\\rule[]{}{1ex}x"
+  },
+  {
+    "symbol": "\\rVert",
+    "rendered": "\\rVert",
+    "template": "\\rVert"
+  },
+  {
+    "symbol": "\\rvert",
+    "rendered": "\\rvert",
+    "template": "\\rvert"
+  },
+  {
+    "symbol": "\\S",
+    "rendered": "\\text{\\S}",
+    "template": "\\text{\\S}"
+  },
+  {
+    "symbol": "\\scriptscriptstyle",
+    "rendered": "\\scriptscriptstyle \\frac cd",
+    "template": "\\scriptscriptstyle \\frac cd"
+  },
+  {
+    "symbol": "\\scriptsize",
+    "rendered": "\\scriptsize scriptsize",
+    "template": "\\scriptsize scriptsize"
+  },
+  {
+    "symbol": "\\scriptstyle",
+    "rendered": "\\frac ab + {\\scriptstyle \\frac cd}",
+    "template": "\\frac ab + {\\scriptstyle \\frac cd}"
+  },
+  {
+    "symbol": "\\sdot",
+    "rendered": "\\sdot",
+    "template": "\\sdot"
+  },
+  {
+    "symbol": "\\searrow",
+    "rendered": "\\searrow",
+    "template": "\\searrow"
+  },
+  {
+    "symbol": "\\sec",
+    "rendered": "\\sec",
+    "template": "\\sec"
+  },
+  {
+    "symbol": "\\sect",
+    "rendered": "\\text{\\sect}",
+    "template": "\\text{\\sect}"
+  },
+  {
+    "symbol": "\\set",
+    "rendered": "\\set{x<5}",
+    "template": "\\set{}"
+  },
+  {
+    "symbol": "\\Set",
+    "rendered": "\\Set{x<5}",
+    "template": "\\Set{}"
+  },
+  {
+    "symbol": "\\setminus",
+    "rendered": "\\setminus",
+    "template": "\\setminus"
+  },
+  {
+    "symbol": "\\sf",
+    "rendered": "\\sf AaBb123",
+    "template": "\\sf AaBb123"
+  },
+  {
+    "symbol": "\\sharp",
+    "rendered": "\\sharp",
+    "template": "\\sharp"
+  },
+  {
+    "symbol": "\\shortmid",
+    "rendered": "\\shortmid",
+    "template": "\\shortmid"
+  },
+  {
+    "symbol": "\\shortparallel",
+    "rendered": "\\shortparallel",
+    "template": "\\shortparallel"
+  },
+  {
+    "symbol": "\\Sigma",
+    "rendered": "\\Sigma",
+    "template": "\\Sigma"
+  },
+  {
+    "symbol": "\\sigma",
+    "rendered": "\\sigma",
+    "template": "\\sigma"
+  },
+  {
+    "symbol": "\\sim",
+    "rendered": "\\sim",
+    "template": "\\sim"
+  },
+  {
+    "symbol": "\\simcolon",
+    "rendered": "\\simcolon",
+    "template": "\\simcolon"
+  },
+  {
+    "symbol": "\\simcoloncolon",
+    "rendered": "\\simcoloncolon",
+    "template": "\\simcoloncolon"
+  },
+  {
+    "symbol": "\\simeq",
+    "rendered": "\\simeq",
+    "template": "\\simeq"
+  },
+  {
+    "symbol": "\\sin",
+    "rendered": "\\sin",
+    "template": "\\sin"
+  },
+  {
+    "symbol": "\\sinh",
+    "rendered": "\\sinh",
+    "template": "\\sinh"
+  },
+  {
+    "symbol": "\\sixptsize",
+    "rendered": "\\sixptsize sixptsize",
+    "template": "\\sixptsize sixptsize"
+  },
+  {
+    "symbol": "\\sh",
+    "rendered": "\\sh",
+    "template": "\\sh"
+  },
+  {
+    "symbol": "\\small",
+    "rendered": "\\small small",
+    "template": "\\small small"
+  },
+  {
+    "symbol": "\\smallfrown",
+    "rendered": "\\smallfrown",
+    "template": "\\smallfrown"
+  },
+  {
+    "symbol": "\\smallint",
+    "rendered": "\\smallint",
+    "template": "\\smallint"
+  },
+  {
+    "symbol": "\\smallsetminus",
+    "rendered": "\\smallsetminus",
+    "template": "\\smallsetminus"
+  },
+  {
+    "symbol": "\\smallsmile",
+    "rendered": "\\smallsmile",
+    "template": "\\smallsmile"
+  },
+  {
+    "symbol": "\\smash",
+    "rendered": "\\left(x^{\\smash{2}}\\right)",
+    "template": "\\left(x^{\\smash{}}\\right)"
+  },
+  {
+    "symbol": "\\smile",
+    "rendered": "\\smile",
+    "template": "\\smile"
+  },
+  {
+    "symbol": "\\sout",
+    "rendered": "\\sout{abc}",
+    "template": "\\sout{}"
+  },
+  {
+    "symbol": "\\space",
+    "rendered": "a\\space b",
+    "template": "a\\space b"
+  },
+  {
+    "symbol": "\\spades",
+    "rendered": "\\spades",
+    "template": "\\spades"
+  },
+  {
+    "symbol": "\\spadesuit",
+    "rendered": "\\spadesuit",
+    "template": "\\spadesuit"
+  },
+  {
+    "symbol": "\\sphericalangle",
+    "rendered": "\\sphericalangle",
+    "template": "\\sphericalangle"
+  },
+  {
+    "symbol": "\\sqcap",
+    "rendered": "\\sqcap",
+    "template": "\\sqcap"
+  },
+  {
+    "symbol": "\\sqcup",
+    "rendered": "\\sqcup",
+    "template": "\\sqcup"
+  },
+  {
+    "symbol": "\\square",
+    "rendered": "\\square",
+    "template": "\\square"
+  },
+  {
+    "symbol": "\\sqrt",
+    "rendered": "\\sqrt{x}",
+    "template": "\\sqrt{}"
+  },
+  {
+    "symbol": "\\sqrt",
+    "rendered": "\\sqrt[3]{x}",
+    "template": "\\sqrt[]{}"
+  },
+  {
+    "symbol": "\\sqsubset",
+    "rendered": "\\sqsubset",
+    "template": "\\sqsubset"
+  },
+  {
+    "symbol": "\\sqsubseteq",
+    "rendered": "\\sqsubseteq",
+    "template": "\\sqsubseteq"
+  },
+  {
+    "symbol": "\\sqsupset",
+    "rendered": "\\sqsupset",
+    "template": "\\sqsupset"
+  },
+  {
+    "symbol": "\\sqsupseteq",
+    "rendered": "\\sqsupseteq",
+    "template": "\\sqsupseteq"
+  },
+  {
+    "symbol": "\\ss",
+    "rendered": "\\text{\\ss}",
+    "template": "\\text{\\ss}"
+  },
+  {
+    "symbol": "\\stackrel",
+    "rendered": "\\stackrel{!}{=}",
+    "template": "\\stackrel{}{}"
+  },
+  {
+    "symbol": "\\star",
+    "rendered": "\\star",
+    "template": "\\star"
+  },
+  {
+    "symbol": "\\sub",
+    "rendered": "\\sub",
+    "template": "\\sub"
+  },
+  {
+    "symbol": "\\sube",
+    "rendered": "\\sube",
+    "template": "\\sube"
+  },
+  {
+    "symbol": "\\Subset",
+    "rendered": "\\Subset",
+    "template": "\\Subset"
+  },
+  {
+    "symbol": "\\subset",
+    "rendered": "\\subset",
+    "template": "\\subset"
+  },
+  {
+    "symbol": "\\subseteq",
+    "rendered": "\\subseteq",
+    "template": "\\subseteq"
+  },
+  {
+    "symbol": "\\subseteqq",
+    "rendered": "\\subseteqq",
+    "template": "\\subseteqq"
+  },
+  {
+    "symbol": "\\subsetneq",
+    "rendered": "\\subsetneq",
+    "template": "\\subsetneq"
+  },
+  {
+    "symbol": "\\subsetneqq",
+    "rendered": "\\subsetneqq",
+    "template": "\\subsetneqq"
+  },
+  {
+    "symbol": "\\substack",
+    "rendered": "\\sum_{\\substack{0<i<m\\\\0<j<n}}",
+    "template": "\\sum_{\\substack{}}"
+  },
+  {
+    "symbol": "\\succ",
+    "rendered": "\\succ",
+    "template": "\\succ"
+  },
+  {
+    "symbol": "\\succapprox",
+    "rendered": "\\succapprox",
+    "template": "\\succapprox"
+  },
+  {
+    "symbol": "\\succcurlyeq",
+    "rendered": "\\succcurlyeq",
+    "template": "\\succcurlyeq"
+  },
+  {
+    "symbol": "\\succeq",
+    "rendered": "\\succeq",
+    "template": "\\succeq"
+  },
+  {
+    "symbol": "\\succnapprox",
+    "rendered": "\\succnapprox",
+    "template": "\\succnapprox"
+  },
+  {
+    "symbol": "\\succneqq",
+    "rendered": "\\succneqq",
+    "template": "\\succneqq"
+  },
+  {
+    "symbol": "\\succnsim",
+    "rendered": "\\succnsim",
+    "template": "\\succnsim"
+  },
+  {
+    "symbol": "\\succsim",
+    "rendered": "\\succsim",
+    "template": "\\succsim"
+  },
+  {
+    "symbol": "\\sum",
+    "rendered": "\\sum",
+    "template": "\\sum"
+  },
+  {
+    "symbol": "\\sup",
+    "rendered": "\\sup",
+    "template": "\\sup"
+  },
+  {
+    "symbol": "\\supe",
+    "rendered": "\\supe",
+    "template": "\\supe"
+  },
+  {
+    "symbol": "\\Supset",
+    "rendered": "\\Supset",
+    "template": "\\Supset"
+  },
+  {
+    "symbol": "\\supset",
+    "rendered": "\\supset",
+    "template": "\\supset"
+  },
+  {
+    "symbol": "\\supseteq",
+    "rendered": "\\supseteq",
+    "template": "\\supseteq"
+  },
+  {
+    "symbol": "\\supseteqq",
+    "rendered": "\\supseteqq",
+    "template": "\\supseteqq"
+  },
+  {
+    "symbol": "\\supsetneq",
+    "rendered": "\\supsetneq",
+    "template": "\\supsetneq"
+  },
+  {
+    "symbol": "\\supsetneqq",
+    "rendered": "\\supsetneqq",
+    "template": "\\supsetneqq"
+  },
+  {
+    "symbol": "\\surd",
+    "rendered": "\\surd",
+    "template": "\\surd"
+  },
+  {
+    "symbol": "\\swarrow",
+    "rendered": "\\swarrow",
+    "template": "\\swarrow"
+  },
+  {
+    "symbol": "\\tag",
+    "rendered": "\\tag{3.1c} a^2+b^2=c^2",
+    "template": "\\tag{} a^2+b^2=c^2"
+  },
+  {
+    "symbol": "\\tag*",
+    "rendered": "\\tag*{3.1c} a^2+b^2=c^2",
+    "template": "\\tag*{3.1c} a^2+b^2=c^2"
+  },
+  {
+    "symbol": "\\tan",
+    "rendered": "\\tan",
+    "template": "\\tan"
+  },
+  {
+    "symbol": "\\tanh",
+    "rendered": "\\tanh",
+    "template": "\\tanh"
+  },
+  {
+    "symbol": "\\Tau",
+    "rendered": "\\Tau",
+    "template": "\\Tau"
+  },
+  {
+    "symbol": "\\tau",
+    "rendered": "\\tau",
+    "template": "\\tau"
+  },
+  {
+    "symbol": "\\tbinom",
+    "rendered": "\\tbinom n k",
+    "template": "\\tbinom n k"
+  },
+  {
+    "symbol": "\\TeX",
+    "rendered": "\\TeX",
+    "template": "\\TeX"
+  },
+  {
+    "symbol": "\\text",
+    "rendered": "\\text{ yes }\\&\\text{ no }",
+    "template": "\\text{}\\&\\text{}"
+  },
+  {
+    "symbol": "\\textasciitilde",
+    "rendered": "\\text{\\textasciitilde}",
+    "template": "\\text{\\textasciitilde}"
+  },
+  {
+    "symbol": "\\textasciicircum",
+    "rendered": "\\text{\\textasciicircum}",
+    "template": "\\text{\\textasciicircum}"
+  },
+  {
+    "symbol": "\\textbackslash",
+    "rendered": "\\text{\\textbackslash}",
+    "template": "\\text{\\textbackslash}"
+  },
+  {
+    "symbol": "\\textbar",
+    "rendered": "\\text{\\textbar}",
+    "template": "\\text{\\textbar}"
+  },
+  {
+    "symbol": "\\textbardbl",
+    "rendered": "\\text{\\textbardbl}",
+    "template": "\\text{\\textbardbl}"
+  },
+  {
+    "symbol": "\\textbf",
+    "rendered": "\\textbf{AaBb123}",
+    "template": "\\textbf{}"
+  },
+  {
+    "symbol": "\\textbraceleft",
+    "rendered": "\\text{\\textbraceleft}",
+    "template": "\\text{\\textbraceleft}"
+  },
+  {
+    "symbol": "\\textbraceright",
+    "rendered": "\\text{\\textbraceright}",
+    "template": "\\text{\\textbraceright}"
+  },
+  {
+    "symbol": "\\textcircled",
+    "rendered": "\\text{\\textcircled a}",
+    "template": "\\text{\\textcircled a}"
+  },
+  {
+    "symbol": "\\textcolor",
+    "rendered": "\\textcolor{blue}{F=ma}",
+    "template": "\\textcolor{}{}"
+  },
+  {
+    "symbol": "\\textdagger",
+    "rendered": "\\text{\\textdagger}",
+    "template": "\\text{\\textdagger}"
+  },
+  {
+    "symbol": "\\textdaggerdbl",
+    "rendered": "\\text{\\textdaggerdbl}",
+    "template": "\\text{\\textdaggerdbl}"
+  },
+  {
+    "symbol": "\\textdegree",
+    "rendered": "\\text{\\textdegree}",
+    "template": "\\text{\\textdegree}"
+  },
+  {
+    "symbol": "\\textdollar",
+    "rendered": "\\text{\\textdollar}",
+    "template": "\\text{\\textdollar}"
+  },
+  {
+    "symbol": "\\textellipsis",
+    "rendered": "\\text{\\textellipsis}",
+    "template": "\\text{\\textellipsis}"
+  },
+  {
+    "symbol": "\\textemdash",
+    "rendered": "\\text{\\textemdash}",
+    "template": "\\text{\\textemdash}"
+  },
+  {
+    "symbol": "\\textendash",
+    "rendered": "\\text{\\textendash}",
+    "template": "\\text{\\textendash}"
+  },
+  {
+    "symbol": "\\textgreater",
+    "rendered": "\\text{\\textgreater}",
+    "template": "\\text{\\textgreater}"
+  },
+  {
+    "symbol": "\\textit",
+    "rendered": "\\textit{AaBb}",
+    "template": "\\textit{}"
+  },
+  {
+    "symbol": "\\textless",
+    "rendered": "\\text{\\textless}",
+    "template": "\\text{\\textless}"
+  },
+  {
+    "symbol": "\\textmd",
+    "rendered": "\\textmd{AaBb123}",
+    "template": "\\textmd{}"
+  },
+  {
+    "symbol": "\\textnormal",
+    "rendered": "\\textnormal{AB}",
+    "template": "\\textnormal{}"
+  },
+  {
+    "symbol": "\\textquotedblleft",
+    "rendered": "\\text{\\textquotedblleft}",
+    "template": "\\text{\\textquotedblleft}"
+  },
+  {
+    "symbol": "\\textquotedblright",
+    "rendered": "\\text{\\textquotedblright}",
+    "template": "\\text{\\textquotedblright}"
+  },
+  {
+    "symbol": "\\textquoteleft",
+    "rendered": "\\text{\\textquoteleft}",
+    "template": "\\text{\\textquoteleft}"
+  },
+  {
+    "symbol": "\\textquoteright",
+    "rendered": "\\text{\\textquoteright}",
+    "template": "\\text{\\textquoteright}"
+  },
+  {
+    "symbol": "\\textregistered",
+    "rendered": "\\text{\\textregistered}",
+    "template": "\\text{\\textregistered}"
+  },
+  {
+    "symbol": "\\textrm",
+    "rendered": "\\textrm{AaBb123}",
+    "template": "\\textrm{}"
+  },
+  {
+    "symbol": "\\textsf",
+    "rendered": "\\textsf{AaBb123}",
+    "template": "\\textsf{}"
+  },
+  {
+    "symbol": "\\textsterling",
+    "rendered": "\\text{\\textsterling}",
+    "template": "\\text{\\textsterling}"
+  },
+  {
+    "symbol": "\\textstyle",
+    "rendered": "\\textstyle\\sum_0^n",
+    "template": "\\textstyle\\sum_0^n"
+  },
+  {
+    "symbol": "\\texttt",
+    "rendered": "\\texttt{AaBb123}",
+    "template": "\\texttt{}"
+  },
+  {
+    "symbol": "\\textunderscore",
+    "rendered": "\\text{\\textunderscore}",
+    "template": "\\text{\\textunderscore}"
+  },
+  {
+    "symbol": "\\textup",
+    "rendered": "\\textup{AaBb123}",
+    "template": "\\textup{}"
+  },
+  {
+    "symbol": "\\tfrac",
+    "rendered": "\\tfrac ab",
+    "template": "\\tfrac ab"
+  },
+  {
+    "symbol": "\\tg",
+    "rendered": "\\tg",
+    "template": "\\tg"
+  },
+  {
+    "symbol": "\\th",
+    "rendered": "\\th",
+    "template": "\\th"
+  },
+  {
+    "symbol": "\\therefore",
+    "rendered": "\\therefore",
+    "template": "\\therefore"
+  },
+  {
+    "symbol": "\\Theta",
+    "rendered": "\\Theta",
+    "template": "\\Theta"
+  },
+  {
+    "symbol": "\\theta",
+    "rendered": "\\theta",
+    "template": "\\theta"
+  },
+  {
+    "symbol": "\\thetasym",
+    "rendered": "\\thetasym",
+    "template": "\\thetasym"
+  },
+  {
+    "symbol": "\\thickapprox",
+    "rendered": "\\thickapprox",
+    "template": "\\thickapprox"
+  },
+  {
+    "symbol": "\\thicksim",
+    "rendered": "\\thicksim",
+    "template": "\\thicksim"
+  },
+  {
+    "symbol": "\\thickspace",
+    "rendered": "a\\thickspace b",
+    "template": "a\\thickspace b"
+  },
+  {
+    "symbol": "\\thinspace",
+    "rendered": "a\\thinspace b",
+    "template": "a\\thinspace b"
+  },
+  {
+    "symbol": "\\tilde",
+    "rendered": "\\tilde M",
+    "template": "\\tilde M"
+  },
+  {
+    "symbol": "\\times",
+    "rendered": "\\times",
+    "template": "\\times"
+  },
+  {
+    "symbol": "\\tiny",
+    "rendered": "\\tiny tiny",
+    "template": "\\tiny tiny"
+  },
+  {
+    "symbol": "\\to",
+    "rendered": "\\to",
+    "template": "\\to"
+  },
+  {
+    "symbol": "\\top",
+    "rendered": "\\top",
+    "template": "\\top"
+  },
+  {
+    "symbol": "\\triangle",
+    "rendered": "\\triangle",
+    "template": "\\triangle"
+  },
+  {
+    "symbol": "\\triangledown",
+    "rendered": "\\triangledown",
+    "template": "\\triangledown"
+  },
+  {
+    "symbol": "\\triangleleft",
+    "rendered": "\\triangleleft",
+    "template": "\\triangleleft"
+  },
+  {
+    "symbol": "\\trianglelefteq",
+    "rendered": "\\trianglelefteq",
+    "template": "\\trianglelefteq"
+  },
+  {
+    "symbol": "\\triangleq",
+    "rendered": "\\triangleq",
+    "template": "\\triangleq"
+  },
+  {
+    "symbol": "\\triangleright",
+    "rendered": "\\triangleright",
+    "template": "\\triangleright"
+  },
+  {
+    "symbol": "\\trianglerighteq",
+    "rendered": "\\trianglerighteq",
+    "template": "\\trianglerighteq"
+  },
+  {
+    "symbol": "\\tt",
+    "rendered": "{\\tt AaBb123}",
+    "template": "{\\tt AaBb123}"
+  },
+  {
+    "symbol": "\\twoheadleftarrow",
+    "rendered": "\\twoheadleftarrow",
+    "template": "\\twoheadleftarrow"
+  },
+  {
+    "symbol": "\\twoheadrightarrow",
+    "rendered": "\\twoheadrightarrow",
+    "template": "\\twoheadrightarrow"
+  },
+  {
+    "symbol": "\\u",
+    "rendered": "\\text{\\u{a}}",
+    "template": "\\text{\\u{}}"
+  },
+  {
+    "symbol": "\\Uarr",
+    "rendered": "\\Uarr",
+    "template": "\\Uarr"
+  },
+  {
+    "symbol": "\\uArr",
+    "rendered": "\\uArr",
+    "template": "\\uArr"
+  },
+  {
+    "symbol": "\\uarr",
+    "rendered": "\\uarr",
+    "template": "\\uarr"
+  },
+  {
+    "symbol": "\\ulcorner",
+    "rendered": "\\ulcorner",
+    "template": "\\ulcorner"
+  },
+  {
+    "symbol": "\\underbar",
+    "rendered": "\\underbar{X}",
+    "template": "\\underbar{}"
+  },
+  {
+    "symbol": "\\underbrace",
+    "rendered": "\\underbrace{x+⋯+x}_{n\\text{ times}}",
+    "template": "\\underbrace{}_{n\\text{ times}}"
+  },
+  {
+    "symbol": "\\undergroup",
+    "rendered": "\\undergroup{AB}",
+    "template": "\\undergroup{}"
+  },
+  {
+    "symbol": "\\underleftarrow",
+    "rendered": "\\underleftarrow{AB}",
+    "template": "\\underleftarrow{}"
+  },
+  {
+    "symbol": "\\underleftrightarrow",
+    "rendered": "\\underleftrightarrow{AB}",
+    "template": "\\underleftrightarrow{}"
+  },
+  {
+    "symbol": "\\underrightarrow",
+    "rendered": "\\underrightarrow{AB}",
+    "template": "\\underrightarrow{}"
+  },
+  {
+    "symbol": "\\underline",
+    "rendered": "\\underline{\\text{a long argument}}",
+    "template": "\\underline{}}"
+  },
+  {
+    "symbol": "\\underlinesegment",
+    "rendered": "\\underlinesegment{AB}",
+    "template": "\\underlinesegment{}"
+  },
+  {
+    "symbol": "\\underrightarrow",
+    "rendered": "\\underrightarrow{AB}",
+    "template": "\\underrightarrow{}"
+  },
+  {
+    "symbol": "\\underset",
+    "rendered": "\\underset{!}{=}",
+    "template": "\\underset{}{}"
+  },
+  {
+    "symbol": "\\unlhd",
+    "rendered": "\\unlhd",
+    "template": "\\unlhd"
+  },
+  {
+    "symbol": "\\unrhd",
+    "rendered": "\\unrhd",
+    "template": "\\unrhd"
+  },
+  {
+    "symbol": "\\Uparrow",
+    "rendered": "\\Uparrow",
+    "template": "\\Uparrow"
+  },
+  {
+    "symbol": "\\uparrow",
+    "rendered": "\\uparrow",
+    "template": "\\uparrow"
+  },
+  {
+    "symbol": "\\Updownarrow",
+    "rendered": "\\Updownarrow",
+    "template": "\\Updownarrow"
+  },
+  {
+    "symbol": "\\updownarrow",
+    "rendered": "\\updownarrow",
+    "template": "\\updownarrow"
+  },
+  {
+    "symbol": "\\upharpoonleft",
+    "rendered": "\\upharpoonleft",
+    "template": "\\upharpoonleft"
+  },
+  {
+    "symbol": "\\upharpoonright",
+    "rendered": "\\upharpoonright",
+    "template": "\\upharpoonright"
+  },
+  {
+    "symbol": "\\uplus",
+    "rendered": "\\uplus",
+    "template": "\\uplus"
+  },
+  {
+    "symbol": "\\Upsilon",
+    "rendered": "\\Upsilon",
+    "template": "\\Upsilon"
+  },
+  {
+    "symbol": "\\upsilon",
+    "rendered": "\\upsilon",
+    "template": "\\upsilon"
+  },
+  {
+    "symbol": "\\upuparrows",
+    "rendered": "\\upuparrows",
+    "template": "\\upuparrows"
+  },
+  {
+    "symbol": "\\urcorner",
+    "rendered": "\\urcorner",
+    "template": "\\urcorner"
+  },
+  {
+    "symbol": "\\url",
+    "rendered": "\\footnotesize\\url{https://katex.org/}",
+    "template": "\\footnotesize\\url{}"
+  },
+  {
+    "symbol": "\\utilde",
+    "rendered": "\\utilde{AB}",
+    "template": "\\utilde{}"
+  },
+  {
+    "symbol": "\\v",
+    "rendered": "\\text{\\v{a}}",
+    "template": "\\text{\\v{}}"
+  },
+  {
+    "symbol": "\\varDelta",
+    "rendered": "\\varDelta",
+    "template": "\\varDelta"
+  },
+  {
+    "symbol": "\\varepsilon",
+    "rendered": "\\varepsilon",
+    "template": "\\varepsilon"
+  },
+  {
+    "symbol": "\\varGamma",
+    "rendered": "\\varGamma",
+    "template": "\\varGamma"
+  },
+  {
+    "symbol": "\\varinjlim",
+    "rendered": "\\varinjlim",
+    "template": "\\varinjlim"
+  },
+  {
+    "symbol": "\\varkappa",
+    "rendered": "\\varkappa",
+    "template": "\\varkappa"
+  },
+  {
+    "symbol": "\\varLambda",
+    "rendered": "\\varLambda",
+    "template": "\\varLambda"
+  },
+  {
+    "symbol": "\\varliminf",
+    "rendered": "\\varliminf",
+    "template": "\\varliminf"
+  },
+  {
+    "symbol": "\\varlimsup",
+    "rendered": "\\varlimsup",
+    "template": "\\varlimsup"
+  },
+  {
+    "symbol": "\\varnothing",
+    "rendered": "\\varnothing",
+    "template": "\\varnothing"
+  },
+  {
+    "symbol": "\\varOmega",
+    "rendered": "\\varOmega",
+    "template": "\\varOmega"
+  },
+  {
+    "symbol": "\\varPhi",
+    "rendered": "\\varPhi",
+    "template": "\\varPhi"
+  },
+  {
+    "symbol": "\\varphi",
+    "rendered": "\\varphi",
+    "template": "\\varphi"
+  },
+  {
+    "symbol": "\\varPi",
+    "rendered": "\\varPi",
+    "template": "\\varPi"
+  },
+  {
+    "symbol": "\\varpi",
+    "rendered": "\\varpi",
+    "template": "\\varpi"
+  },
+  {
+    "symbol": "\\varprojlim",
+    "rendered": "\\varprojlim",
+    "template": "\\varprojlim"
+  },
+  {
+    "symbol": "\\varpropto",
+    "rendered": "\\varpropto",
+    "template": "\\varpropto"
+  },
+  {
+    "symbol": "\\varPsi",
+    "rendered": "\\varPsi",
+    "template": "\\varPsi"
+  },
+  {
+    "symbol": "\\varrho",
+    "rendered": "\\varrho",
+    "template": "\\varrho"
+  },
+  {
+    "symbol": "\\varSigma",
+    "rendered": "\\varSigma",
+    "template": "\\varSigma"
+  },
+  {
+    "symbol": "\\varsigma",
+    "rendered": "\\varsigma",
+    "template": "\\varsigma"
+  },
+  {
+    "symbol": "\\varsubsetneq",
+    "rendered": "\\varsubsetneq",
+    "template": "\\varsubsetneq"
+  },
+  {
+    "symbol": "\\varsubsetneqq",
+    "rendered": "\\varsubsetneqq",
+    "template": "\\varsubsetneqq"
+  },
+  {
+    "symbol": "\\varsupsetneq",
+    "rendered": "\\varsupsetneq",
+    "template": "\\varsupsetneq"
+  },
+  {
+    "symbol": "\\varsupsetneqq",
+    "rendered": "\\varsupsetneqq",
+    "template": "\\varsupsetneqq"
+  },
+  {
+    "symbol": "\\varTheta",
+    "rendered": "\\varTheta",
+    "template": "\\varTheta"
+  },
+  {
+    "symbol": "\\vartheta",
+    "rendered": "\\vartheta",
+    "template": "\\vartheta"
+  },
+  {
+    "symbol": "\\vartriangle",
+    "rendered": "\\vartriangle",
+    "template": "\\vartriangle"
+  },
+  {
+    "symbol": "\\vartriangleleft",
+    "rendered": "\\vartriangleleft",
+    "template": "\\vartriangleleft"
+  },
+  {
+    "symbol": "\\vartriangleright",
+    "rendered": "\\vartriangleright",
+    "template": "\\vartriangleright"
+  },
+  {
+    "symbol": "\\varUpsilon",
+    "rendered": "\\varUpsilon",
+    "template": "\\varUpsilon"
+  },
+  {
+    "symbol": "\\varXi",
+    "rendered": "\\varXi",
+    "template": "\\varXi"
+  },
+  {
+    "symbol": "\\vcentcolon",
+    "rendered": "\\mathrel{\\vcentcolon =}",
+    "template": "\\mathrel{\\vcentcolon =}"
+  },
+  {
+    "symbol": "\\vcenter",
+    "rendered": "a+\\left(\\vcenter{\\frac{\\frac a b}c}\\right)",
+    "template": "a+\\left(\\vcenter{}c}\\right)"
+  },
+  {
+    "symbol": "\\vcenter",
+    "rendered": "a+\\left(\\vcenter{\\frac{\\frac a b}c}\\right)",
+    "template": "a+\\left(\\vcenter{}c}\\right)"
+  },
+  {
+    "symbol": "\\Vdash",
+    "rendered": "\\Vdash",
+    "template": "\\Vdash"
+  },
+  {
+    "symbol": "\\vDash",
+    "rendered": "\\vDash",
+    "template": "\\vDash"
+  },
+  {
+    "symbol": "\\vdash",
+    "rendered": "\\vdash",
+    "template": "\\vdash"
+  },
+  {
+    "symbol": "\\vdots",
+    "rendered": "\\vdots",
+    "template": "\\vdots"
+  },
+  {
+    "symbol": "\\vec",
+    "rendered": "\\vec{F}",
+    "template": "\\vec{}"
+  },
+  {
+    "symbol": "\\vee",
+    "rendered": "\\vee",
+    "template": "\\vee"
+  },
+  {
+    "symbol": "\\veebar",
+    "rendered": "\\veebar",
+    "template": "\\veebar"
+  },
+  {
+    "symbol": "\\verb",
+    "rendered": "\\verb!\\frac a b!",
+    "template": "\\verb!\\frac a b!"
+  },
+  {
+    "symbol": "\\Vert",
+    "rendered": "\\Vert",
+    "template": "\\Vert"
+  },
+  {
+    "symbol": "\\vert",
+    "rendered": "\\vert",
+    "template": "\\vert"
+  },
+  {
+    "symbol": "\\vphantom",
+    "rendered": "\\overline{\\vphantom{M}a}",
+    "template": "\\overline{\\vphantom{}a}"
+  },
+  {
+    "symbol": "\\Vvdash",
+    "rendered": "\\Vvdash",
+    "template": "\\Vvdash"
+  },
+  {
+    "symbol": "\\wedge",
+    "rendered": "\\wedge",
+    "template": "\\wedge"
+  },
+  {
+    "symbol": "\\weierp",
+    "rendered": "\\weierp",
+    "template": "\\weierp"
+  },
+  {
+    "symbol": "\\widecheck",
+    "rendered": "\\widecheck{AB}",
+    "template": "\\widecheck{}"
+  },
+  {
+    "symbol": "\\widehat",
+    "rendered": "\\widehat{AB}",
+    "template": "\\widehat{}"
+  },
+  {
+    "symbol": "\\widetilde",
+    "rendered": "\\widetilde{AB}",
+    "template": "\\widetilde{}"
+  },
+  {
+    "symbol": "\\wp",
+    "rendered": "\\wp",
+    "template": "\\wp"
+  },
+  {
+    "symbol": "\\wr",
+    "rendered": "\\wr",
+    "template": "\\wr"
+  },
+  {
+    "symbol": "\\xcancel",
+    "rendered": "\\xcancel{ABC}",
+    "template": "\\xcancel{}"
+  },
+  {
+    "symbol": "\\xdef",
+    "rendered": "\\def\\foo{a}\\xdef\\fcopy{\\foo}\\def\\foo{}\\fcopy",
+    "template": "\\def\\foo{a}\\xdef\\fcopy{\\foo}\\def\\foo{}\\fcopy"
+  },
+  {
+    "symbol": "\\Xi",
+    "rendered": "\\Xi",
+    "template": "\\Xi"
+  },
+  {
+    "symbol": "\\xi",
+    "rendered": "\\xi",
+    "template": "\\xi"
+  },
+  {
+    "symbol": "\\xhookleftarrow",
+    "rendered": "\\xhookleftarrow{abc}",
+    "template": "\\xhookleftarrow{}"
+  },
+  {
+    "symbol": "\\xhookrightarrow",
+    "rendered": "\\xhookrightarrow{abc}",
+    "template": "\\xhookrightarrow{}"
+  },
+  {
+    "symbol": "\\xLeftarrow",
+    "rendered": "\\xLeftarrow{abc}",
+    "template": "\\xLeftarrow{}"
+  },
+  {
+    "symbol": "\\xleftarrow",
+    "rendered": "\\xleftarrow{abc}",
+    "template": "\\xleftarrow{}"
+  },
+  {
+    "symbol": "\\xleftharpoondown",
+    "rendered": "\\xleftharpoondown{abc}",
+    "template": "\\xleftharpoondown{}"
+  },
+  {
+    "symbol": "\\xleftharpoonup",
+    "rendered": "\\xleftharpoonup{abc}",
+    "template": "\\xleftharpoonup{}"
+  },
+  {
+    "symbol": "\\xLeftrightarrow",
+    "rendered": "\\xLeftrightarrow{abc}",
+    "template": "\\xLeftrightarrow{}"
+  },
+  {
+    "symbol": "\\xleftrightarrow",
+    "rendered": "\\xleftrightarrow{abc}",
+    "template": "\\xleftrightarrow{}"
+  },
+  {
+    "symbol": "\\xleftrightharpoons",
+    "rendered": "\\xleftrightharpoons{abc}",
+    "template": "\\xleftrightharpoons{}"
+  },
+  {
+    "symbol": "\\xlongequal",
+    "rendered": "\\xlongequal{abc}",
+    "template": "\\xlongequal{}"
+  },
+  {
+    "symbol": "\\xmapsto",
+    "rendered": "\\xmapsto{abc}",
+    "template": "\\xmapsto{}"
+  },
+  {
+    "symbol": "\\xRightarrow",
+    "rendered": "\\xRightarrow{abc}",
+    "template": "\\xRightarrow{}"
+  },
+  {
+    "symbol": "\\xrightarrow",
+    "rendered": "\\xrightarrow{abc}",
+    "template": "\\xrightarrow{}"
+  },
+  {
+    "symbol": "\\xrightharpoondown",
+    "rendered": "\\xrightharpoondown{abc}",
+    "template": "\\xrightharpoondown{}"
+  },
+  {
+    "symbol": "\\xrightharpoonup",
+    "rendered": "\\xrightharpoonup{abc}",
+    "template": "\\xrightharpoonup{}"
+  },
+  {
+    "symbol": "\\xrightleftharpoons",
+    "rendered": "\\xrightleftharpoons{abc}",
+    "template": "\\xrightleftharpoons{}"
+  },
+  {
+    "symbol": "\\xtofrom",
+    "rendered": "\\xtofrom{abc}",
+    "template": "\\xtofrom{}"
+  },
+  {
+    "symbol": "\\xtwoheadleftarrow",
+    "rendered": "\\xtwoheadleftarrow{abc}",
+    "template": "\\xtwoheadleftarrow{}"
+  },
+  {
+    "symbol": "\\xtwoheadrightarrow",
+    "rendered": "\\xtwoheadrightarrow{abc}",
+    "template": "\\xtwoheadrightarrow{}"
+  },
+  {
+    "symbol": "\\yen",
+    "rendered": "\\yen",
+    "template": "\\yen"
+  },
+  {
+    "symbol": "\\Z",
+    "rendered": "\\Z",
+    "template": "\\Z"
+  },
+  {
+    "symbol": "\\Zeta",
+    "rendered": "\\Zeta",
+    "template": "\\Zeta"
+  },
+  {
+    "symbol": "\\zeta",
+    "rendered": "\\zeta",
+    "template": "\\zeta"
+  }
+]

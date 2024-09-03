@@ -1,6 +1,10 @@
 import { DomEditor, IDomEditor } from '@wangeditor/editor'
 import $, { DOMElement } from '../utils/dom'
 import { Editor } from 'slate'
+import AutoComplete from './components/AutoComplete'
+import katex from 'katex'
+
+const prefixClassName = (className: string) => `w-e-formula-${className}`
 
 export function isMenuDisabled(editor: IDomEditor, mark?: string): boolean {
   if (editor.selection == null) return true
@@ -46,6 +50,20 @@ export const stringToHtml = (s: string): string => {
     )
 }
 
+function insertText(textarea, text) {
+  const startPos = Math.max(0, textarea.value.lastIndexOf('\\'))
+  const currentPosition = textarea.selectionStart
+
+  // 插入文本
+  textarea.value =
+    textarea.value.substring(0, startPos) + text + textarea.value.substring(currentPosition)
+
+  // 计算新的光标位置并设置
+  const index = text.lastIndexOf('{}')
+  const newPos = index === -1 ? startPos + text.length : startPos + index + 1
+  textarea.selectionStart = textarea.selectionEnd = newPos
+}
+
 /**
  * 生成 modal textarea elems
  * @param labelText label text
@@ -53,25 +71,97 @@ export const stringToHtml = (s: string): string => {
  * @param placeholder input placeholder
  * @returns [$container, $textarea, $textareaBox]
  */
-export function genModalTextareaElems(
-  labelText: string,
-  textareaId: string,
-  placeholder?: string
-): DOMElement[] {
+export function genModalTextareaElems(labelText: string, textareaId: string, placeholder?: string) {
   const $container = $('<div class="babel-container"></div>')
-  $container.append(`<div class="w-e-formula-modal-label">${labelText}</div>`)
-  const $textareaBox = $('<div class="w-e-formula-modal-textarea-box"></div>')
+  $container.append(`<div class="${prefixClassName('modal-label')}">${labelText}</div>`)
+  const $textareaBox = $(`<div class="${prefixClassName('modal-textarea-box')}"></div>`)
   const $textarea = $(
-    `<textarea class="w-e-formula-modal-textarea" type="text" id="${textareaId}" placeholder="${
-      placeholder || ''
-    }"></textarea>`
+    `<textarea class="${prefixClassName(
+      'modal-textarea'
+    )}" type="text" id="${textareaId}" placeholder="${placeholder || ''}"></textarea>`
   )
   const $textareaContent = $(
-    '<div class="w-e-formula-modal-textarea w-e-formula-modal-textarea--content"></div>'
+    `<div class="${prefixClassName('modal-textarea')} ${prefixClassName(
+      'modal-textarea--content'
+    )}"></div>`
   )
+  const $textareaCursor = $(
+    `<div class="${prefixClassName('modal-textarea')} ${prefixClassName(
+      'modal-textarea--cursor'
+    )}"></div>`
+  )
+  const $render = $('<div class="w-e-formula-modal-latex"></div>')
+
+  const renderLatex = (str: string) => {
+    katex.render(str, $render[0] as any, {
+      throwOnError: false,
+    })
+  }
   $textareaBox.append($textarea)
   $textareaBox.append($textareaContent)
+  $textareaBox.append($textareaCursor)
   $container.append($textareaBox)
 
-  return [$container[0], $textarea[0], $textareaContent[0]]
+  let keyword = ''
+  let isShowAutoComplete = false
+
+  const cursorElem = document.createElement('span')
+  $textarea.on('input', (e: any) => {
+    const cursorPosition = e.target.selectionStart
+
+    const cursorBeforeText = $textareaContent[0].textContent.slice(0, cursorPosition)
+    $textareaCursor[0].textContent = cursorBeforeText
+    $textareaCursor.append(cursorElem)
+
+    // 输入字符和删除单个字符
+    if (['insertText', 'deleteContentBackward'].includes(e.inputType)) {
+      if (e.data === '\\' && !isShowAutoComplete) {
+        keyword = e.data
+        isShowAutoComplete = true
+        AutoComplete.show($textarea[0], cursorElem)
+          .then(symbol => {
+            insertText($textarea[0], symbol)
+            setTextareaValue($textarea.val())
+            isShowAutoComplete = false
+          })
+          .catch(() => {
+            isShowAutoComplete = false
+          })
+      } else {
+        if (e.inputType === 'deleteContentBackward') {
+          keyword = keyword.slice(0, -1)
+        } else {
+          if (keyword.startsWith('\\')) {
+            keyword = `\\${cursorBeforeText.split('\\').pop()}${e.data}`
+          }
+        }
+      }
+    } else {
+      keyword = ''
+    }
+
+    const value = $textarea.val()
+    const html = stringToHtml(value)
+    $textareaContent[0].innerHTML = html
+    renderLatex($textarea.val())
+    $textarea[0].setAttribute('data-cursor-value', keyword)
+  })
+
+  $textarea.on('scroll', e => {
+    $textareaContent[0].scrollLeft = (e.target as any).scrollLeft
+    $textareaContent[0].scrollTop = (e.target as any).scrollTop
+  })
+
+  const setTextareaValue = (value: string) => {
+    $textarea.val(value)
+    renderLatex(value)
+    const html = stringToHtml(value)
+    $textareaContent[0].innerHTML = html
+  }
+
+  setTimeout(() => {
+    $textarea.focus()
+  })
+
+  return { textareaContainerElem: $container[0], setTextareaValue, renderElem: $render[0] }
 }
