@@ -33,14 +33,23 @@ export const AutoComplete = React.forwardRef(
     const [value, setValue] = useState('')
     const [style, setStyle] = useState<React.CSSProperties>(initialStyle)
 
+    const filterValue = useMemo(
+      () => (value.startsWith('\\') ? value.trim().slice(1) : value.trim()),
+      [value]
+    )
+
     const getList: AutoCompleteRef['getList'] = (value: string) => {
-      if (!value) {
+      if (!filterValue) {
         return defaultFunctions.map(item => functionMap[item]).filter(Boolean)
       }
-      return functions.filter(item => item.symbol.includes(value))
+      return functions
+        .filter(item => item.symbol.includes(filterValue))
+        .sort((a, b) => {
+          return +b.symbol.startsWith(`\\${filterValue}`) - +a.symbol.startsWith(`\\${filterValue}`)
+        })
     }
 
-    const list = useMemo(() => getList(value), [value])
+    const list = useMemo(() => getList(value), [value, filterValue])
 
     const [activeIndex, setActiveIndex] = useState<number>(0)
 
@@ -85,7 +94,7 @@ export const AutoComplete = React.forwardRef(
     return (
       <div ref={divRef} className="w-e-autocomplete" style={style}>
         {list.map((item, index) => {
-          const matchIndex = item.symbol.toLowerCase().indexOf(value)
+          const matchIndex = item.symbol.toLowerCase().indexOf(filterValue)
           return (
             <div
               key={index}
@@ -98,9 +107,9 @@ export const AutoComplete = React.forwardRef(
               <div className="w-e-autocomplete-item-symbol">
                 {item.symbol.substring(0, matchIndex)}
                 <span className="w-e-autocomplete-item-match">
-                  {item.symbol.substring(matchIndex, matchIndex + value.length)}
+                  {item.symbol.substring(matchIndex, matchIndex + filterValue.length)}
                 </span>
-                {item.symbol.substring(matchIndex + value.length)}
+                {item.symbol.substring(matchIndex + filterValue.length)}
               </div>
               <div className="w-e-autocomplete-item-render" data-value={item.rendered} />
             </div>
@@ -111,6 +120,22 @@ export const AutoComplete = React.forwardRef(
   }
 )
 
+const getElementOffset = element => {
+  let offsetTop = 0
+  let offsetLeft = 0
+
+  while (element) {
+    offsetTop += element.offsetTop
+    offsetLeft += element.offsetLeft
+    element = element.offsetParent
+  }
+
+  return {
+    offsetTop,
+    offsetLeft,
+  }
+}
+
 export default {
   show(input, target) {
     return new Promise<string>((resolve, reject) => {
@@ -118,14 +143,25 @@ export default {
       document.body.appendChild(div)
       const componentRef = React.createRef<AutoCompleteRef>()
       const getPosition = () => {
+        const { offsetLeft, offsetTop } = getElementOffset(target)
         const rect = target.getBoundingClientRect()
         const position = {
-          left: `${rect.x + 5}px`,
-          top: `${rect.y + rect.height}px`,
+          left: `${offsetLeft + 5}px`,
+          top: `${offsetTop + rect.height}px`,
         }
         return position
       }
       const initialStyle = getPosition()
+      let cursorPosition = input.selectionStart
+
+      const onCancel = () => {
+        reject()
+        setTimeout(() => {
+          if (document.body.contains(div)) {
+            document.body.removeChild(div)
+          }
+        }, 100)
+      }
 
       input.addEventListener?.('keydown', e => {
         if (e.key === 'ArrowDown') {
@@ -141,23 +177,31 @@ export default {
             e.preventDefault()
           }
         }
+        setTimeout(() => {
+          if (cursorPosition !== input.selectionStart) {
+            onCancel()
+          }
+        })
       })
-
+      input.addEventListener?.('blur', () => {
+        setTimeout(() => {
+          onCancel()
+        }, 200)
+      })
+      input.addEventListener?.('click', () => {
+        setTimeout(() => {
+          if (cursorPosition !== input.selectionStart) {
+            onCancel()
+          }
+        })
+      })
       input.addEventListener?.('input', e => {
+        cursorPosition = e.target.selectionStart
         setTimeout(() => {
           componentRef.current.setStyle?.(getPosition())
           componentRef.current?.setValue(e.target.getAttribute('data-cursor-value').slice(0))
         })
       })
-
-      const onCancel = () => {
-        reject()
-        setTimeout(() => {
-          if (document.body.contains(div)) {
-            document.body.removeChild(div)
-          }
-        }, 100)
-      }
 
       return ReactDOM.createRoot(div).render(
         <AutoComplete
