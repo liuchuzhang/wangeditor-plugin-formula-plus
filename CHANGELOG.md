@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.0...v1.3.1) (2024-09-04)
+
+
+### Bug Fixes
+
+* 关键字开头排序靠前 ([ad431ed](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/ad431ed24d9cb2d30ea92e1c436351811e448afa))
+* 光标错位 ([10d5c02](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/10d5c02b909de4260f729cf8f8ee4ef63b9a6a32))
+
 # [1.3.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.2.1...v1.3.0) (2024-09-03)
 
 
