@@ -19,13 +19,9 @@
 
 ## release 发布
 
-第一，升级 package.json 版本
-
-第二，提交 git tag 可触发 github actions 并发布 npm
-
 ```sh
-git tag -a v1.0.1 -m "v1.0.1"  # 和 package.json 版本同步即可
-git push origin --tags
+# 生成新版本、tag、changelog、release，生成 tag 会触发 github actions 并发布 npm
+yarn release
 ```
 
 ## 注意事项
