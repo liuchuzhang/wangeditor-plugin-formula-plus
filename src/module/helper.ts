@@ -51,8 +51,9 @@ export const stringToHtml = (s: string): string => {
 }
 
 function insertText(textarea, text) {
-  const startPos = Math.max(0, textarea.value.lastIndexOf('\\'))
   const currentPosition = textarea.selectionStart
+  const startValue = textarea.value.substring(0, currentPosition)
+  const startPos = Math.max(0, startValue.lastIndexOf('\\'))
 
   // 插入文本
   textarea.value =
@@ -106,16 +107,18 @@ export function genModalTextareaElems(labelText: string, textareaId: string, pla
   let isShowAutoComplete = false
 
   const cursorElem = document.createElement('span')
+  cursorElem.textContent = '|'
   $textarea.on('input', (e: any) => {
     const cursorPosition = e.target.selectionStart
 
-    const cursorBeforeText = $textareaContent[0].textContent.slice(0, cursorPosition)
+    const cursorBeforeText = ($textarea.val() || '').slice(0, cursorPosition)
     $textareaCursor[0].textContent = cursorBeforeText
     $textareaCursor.append(cursorElem)
 
     // 输入字符和删除单个字符
     if (['insertText', 'deleteContentBackward'].includes(e.inputType)) {
       if (e.data === '\\' && !isShowAutoComplete) {
+        // 输入 \ 触发
         keyword = e.data
         isShowAutoComplete = true
         AutoComplete.show($textarea[0], cursorElem)
@@ -132,7 +135,7 @@ export function genModalTextareaElems(labelText: string, textareaId: string, pla
           keyword = keyword.slice(0, -1)
         } else {
           if (keyword.startsWith('\\')) {
-            keyword = `\\${cursorBeforeText.split('\\').pop()}${e.data}`
+            keyword = `\\${cursorBeforeText.split('\\').pop()}`
           }
         }
       }
