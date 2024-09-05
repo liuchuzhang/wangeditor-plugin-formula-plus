@@ -1,7 +1,7 @@
 import { DomEditor, IDomEditor } from '@wangeditor/editor'
 import $, { DOMElement } from '../utils/dom'
 import { Editor } from 'slate'
-import AutoComplete from './components/AutoComplete'
+import autoComplete from './components/AutoComplete'
 import katex from 'katex'
 
 const prefixClassName = (className: string) => `w-e-formula-${className}`
@@ -121,7 +121,8 @@ export function genModalTextareaElems(labelText: string, textareaId: string, pla
         // 输入 \ 触发
         keyword = e.data
         isShowAutoComplete = true
-        AutoComplete.show($textarea[0], cursorElem)
+        autoComplete
+          .open($textarea[0], cursorElem)
           .then(symbol => {
             insertText($textarea[0], symbol)
             setTextareaValue($textarea.val())

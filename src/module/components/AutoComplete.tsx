@@ -1,4 +1,4 @@
-import React, { useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react'
+import React, { useImperativeHandle, useMemo, useRef, useState } from 'react'
 import functions from '../../json/functions.json'
 import katex from 'katex'
 import classNames from 'classnames'
@@ -159,7 +159,7 @@ const getElementOffset = element => {
 }
 
 export default {
-  show(input, target) {
+  open(input, target) {
     return new Promise<string>((resolve, reject) => {
       const div = document.createElement('div')
       document.body.appendChild(div)
@@ -176,7 +176,7 @@ export default {
       const initialStyle = getPosition()
       let cursorPosition = input.selectionStart
 
-      const onCancel = () => {
+      const destroy = () => {
         reject()
         setTimeout(() => {
           if (document.body.contains(div)) {
@@ -186,40 +186,42 @@ export default {
       }
 
       input.addEventListener?.('keydown', e => {
-        if (e.key === 'ArrowDown') {
-          // 向下箭头
-          componentRef.current?.down()
-          if (document.body.contains(div)) {
-            e.preventDefault()
-          }
-        } else if (e.key === 'ArrowUp') {
-          // 向上箭头
-          componentRef.current?.up()
-          if (document.body.contains(div)) {
-            e.preventDefault()
-          }
-        } else if (e.key === 'Enter') {
-          // 回车键
-          componentRef.current?.enter()
-          if (document.body.contains(div)) {
-            e.preventDefault()
-          }
+        switch (e.key) {
+          case 'ArrowDown':
+            // 向下箭头
+            componentRef.current?.down()
+            break
+          case 'ArrowUp':
+            // 向上箭头
+            componentRef.current?.up()
+            break
+          case 'Enter':
+            // 回车键
+            componentRef.current?.enter()
+            break
+          default:
+            break
         }
+
+        if (['ArrowDown', 'ArrowUp', 'Enter'].includes(e.key) && document.body.contains(div)) {
+          e.preventDefault()
+        }
+
         setTimeout(() => {
           if (cursorPosition !== input.selectionStart) {
-            onCancel()
+            destroy()
           }
         })
       })
       input.addEventListener?.('blur', () => {
         setTimeout(() => {
-          onCancel()
+          destroy()
         }, 200)
       })
       input.addEventListener?.('click', () => {
         setTimeout(() => {
           if (cursorPosition !== input.selectionStart) {
-            onCancel()
+            destroy()
           }
         })
       })
@@ -237,11 +239,12 @@ export default {
           initialStyle={initialStyle}
           onSelect={template => {
             resolve(template)
-            onCancel()
+            destroy()
           }}
-          onClose={onCancel}
+          onClose={destroy}
         />
       )
     })
   },
+  Component: AutoComplete,
 }
