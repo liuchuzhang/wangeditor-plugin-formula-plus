@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.1...v1.3.2) (2024-09-05)
+
+
+### Bug Fixes
+
+* 上下键选择滚动条到目标位置 ([eb98491](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/eb984918e1395f3029d7c6e18b8287cb93cf11a3))
+
 ## [1.3.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.0...v1.3.1) (2024-09-04)
 
 
