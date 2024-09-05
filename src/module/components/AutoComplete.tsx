@@ -53,12 +53,33 @@ export const AutoComplete = React.forwardRef(
 
     const [activeIndex, setActiveIndex] = useState<number>(0)
 
+    const scrollToActive = index => {
+      if (divRef.current) {
+        const target = divRef.current.childNodes[index] as HTMLDivElement
+        const { height } = divRef.current.getBoundingClientRect()
+        const bottom = divRef.current.scrollTop + height
+        const top = divRef.current.scrollTop
+
+        if (target.offsetTop < top) {
+          divRef.current.scrollTop = target.offsetTop
+        } else if (target.offsetTop + target.offsetHeight + 2 > bottom) {
+          divRef.current.scrollTop = target.offsetTop + target.offsetHeight - height
+        }
+      }
+    }
+
     useImperativeHandle<any, AutoCompleteRef>(ref, () => ({
       up() {
-        setActiveIndex(Math.max(0, activeIndex - 1))
+        const index = activeIndex === 0 ? list.length - 1 : Math.max(0, activeIndex - 1)
+        setActiveIndex(index)
+        scrollToActive(index)
       },
       down() {
-        setActiveIndex(Math.min(list.length - 1, activeIndex + 1))
+        const index =
+          activeIndex === list.length - 1 ? 0 : Math.min(list.length - 1, activeIndex + 1)
+
+        setActiveIndex(index)
+        scrollToActive(index)
       },
       enter() {
         const active = list[activeIndex]
@@ -70,6 +91,7 @@ export const AutoComplete = React.forwardRef(
         if (!newValue) {
           return onClose()
         }
+        setActiveIndex(0)
         setValue(newValue)
       },
       setStyle,
@@ -167,9 +189,15 @@ export default {
         if (e.key === 'ArrowDown') {
           // 向下箭头
           componentRef.current?.down()
+          if (document.body.contains(div)) {
+            e.preventDefault()
+          }
         } else if (e.key === 'ArrowUp') {
           // 向上箭头
           componentRef.current?.up()
+          if (document.body.contains(div)) {
+            e.preventDefault()
+          }
         } else if (e.key === 'Enter') {
           // 回车键
           componentRef.current?.enter()
