@@ -4,6 +4,7 @@
  */
 
 import { nanoid } from 'nanoid'
+import katex from 'katex'
 
 /**
  * 获取随机数字符串
@@ -17,3 +18,13 @@ export function genRandomStr(prefix: string = 'r'): string {
 // export function replaceSymbols(str: string) {
 //   return str.replace(/</g, '&lt;').replace(/>/g, '&gt;')
 // }
+
+export const katexRender = (
+  str,
+  elem,
+  options = {
+    throwOnError: false,
+  }
+) => {
+  katex.render(`\\displaystyle ${str || ''}`, elem, options)
+}

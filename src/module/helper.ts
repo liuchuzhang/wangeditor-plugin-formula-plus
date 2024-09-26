@@ -2,7 +2,7 @@ import { DomEditor, IDomEditor } from '@wangeditor/editor'
 import $, { DOMElement } from '../utils/dom'
 import { Editor } from 'slate'
 import autoComplete from './components/AutoComplete'
-import katex from 'katex'
+import { katexRender } from '../utils/util'
 
 const prefixClassName = (className: string) => `w-e-formula-${className}`
 
@@ -94,9 +94,7 @@ export function genModalTextareaElems(labelText: string, textareaId: string, pla
   const $render = $('<div class="w-e-formula-modal-latex"></div>')
 
   const renderLatex = (str: string) => {
-    katex.render(str, $render[0] as any, {
-      throwOnError: false,
-    })
+    katexRender(str, $render[0] as any)
   }
   $textareaBox.append($textarea)
   $textareaBox.append($textareaContent)

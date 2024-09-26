@@ -5,7 +5,7 @@
 
 // @ts-ignore
 import katexStyleContent from '!!raw-loader!katex/dist/katex.css'
-import katex from 'katex'
+import { katexRender } from '../utils/util'
 import './native-shim'
 
 class WangEditorFormulaCard extends HTMLElement {
@@ -46,14 +46,12 @@ class WangEditorFormulaCard extends HTMLElement {
   attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null) {
     if (name === 'data-value') {
       if (oldValue == newValue) return
-      this.render(newValue || '')
+      this.render(`\\displaystyle ${newValue || ''}`)
     }
   }
 
   private render(value: string) {
-    katex.render(value, this.span, {
-      throwOnError: false,
-    })
+    katexRender(value, this.span)
   }
 }
 

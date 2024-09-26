@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { useClickAway, useUpdateEffect } from 'ahooks'
 import ReactDOM from 'react-dom/client'
 import defaultFunctions from './defaultFunctions'
+import { katexRender } from '../../utils/util'
 import './index.less'
 
 const functionMap = functions.reduce((obj, item) => {
@@ -103,7 +104,7 @@ export const AutoComplete = React.forwardRef(
         return onClose()
       }
       divRef.current?.querySelectorAll('.w-e-autocomplete-item-render').forEach(e => {
-        katex.render(e.getAttribute('data-value') || '', e as any, {
+        katexRender(`\\displaystyle ${e.getAttribute('data-value') || ''}`, e as any, {
           throwOnError: false,
         })
       })
