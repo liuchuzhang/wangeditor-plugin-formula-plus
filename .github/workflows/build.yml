@@ -26,6 +26,6 @@ jobs:
         with:
           node-version: 22.5.1
           registry-url: https://registry.npmjs.org/
-      - run: npm i
-      - run: npm run test
-      - run: npm run build
+      - run: yarn
+      - run: yarn test
+      - run: yarn build
