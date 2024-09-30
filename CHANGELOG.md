@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.3...v1.3.4) (2024-09-30)
+
+
+### Bug Fixes
+
+* 移除多余属性 ([347c10b](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/347c10bd6f4d3b13eae1c75518825cf97a42ff0e))
+
 ## [1.3.3](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.2...v1.3.3) (2024-09-26)
 
 
