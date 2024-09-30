@@ -12,7 +12,8 @@
       "esModuleInterop": true,
       "moduleResolution": "node",
       "forceConsistentCasingInFileNames": true,
-      "jsx": "react-jsx",
+      "jsx": "react",
+      "jsxFactory": "jsx",
       "downlevelIteration": true
     },
     "include": [

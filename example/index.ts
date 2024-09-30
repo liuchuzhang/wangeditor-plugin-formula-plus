@@ -53,7 +53,7 @@ const editor = createEditor({
   //     ],
   //   },
   // ],
-  html: `<p>hello&nbsp;world<span data-w-e-type="formula" data-w-e-is-void data-w-e-is-inline data-value="c = \\pm\\sqrt{a^2 + b^2}"></span>100</p><p><br></p>`,
+  html: `<p>hello&nbsp;world<span data-w-e-type="formula" data-value="c = \\pm\\sqrt{a^2 + b^2}"></span>100</p><p><br></p>`,
 })
 const toolbar = createToolbar({
   editor,

@@ -3,9 +3,10 @@
  * @author wangfupeng
  */
 
-import { h, VNode } from 'snabbdom'
+import { jsx, VNode } from 'snabbdom'
 import { DomEditor, IDomEditor, SlateElement } from '@wangeditor/editor'
 import { FormulaElement } from './custom-types'
+import { katexRender } from '../utils/util'
 
 function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDomEditor): VNode {
   // 当前节点是否选中
@@ -13,22 +14,12 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
 
   // 构建 formula vnode
   const { value = '' } = elem as FormulaElement
-  const formulaVnode = h(
-    'w-e-formula-card',
-    {
-      dataset: { value },
-    },
-    null
-  )
+  const formulaVnode = <w-e-formula-card data-value={value} />
 
-  // 构建容器 vnode
-  const containerVnode = h(
-    'div',
-    {
-      props: {
-        contentEditable: false, // 不可编辑
-      },
-      style: {
+  const vnode = (
+    <div
+      contentEditable={false}
+      style={{
         display: 'inline-block', // inline
         marginLeft: '3px',
         marginRight: '3px',
@@ -37,12 +28,19 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
           : '2px solid transparent',
         borderRadius: '3px',
         padding: '3px 3px',
-      },
-    },
-    [formulaVnode]
+      }}
+    >
+      {formulaVnode}
+    </div>
   )
 
-  return containerVnode
+  setTimeout(() => {
+    if (!selected && vnode.elm) {
+      katexRender(value, vnode.elm)
+    }
+  })
+
+  return vnode
 }
 
 const conf = {

@@ -1,6 +1,6 @@
+import jsx from 'react'
 import React, { useImperativeHandle, useMemo, useRef, useState } from 'react'
 import functions from '../../json/functions.json'
-import katex from 'katex'
 import classNames from 'classnames'
 import { useClickAway, useUpdateEffect } from 'ahooks'
 import ReactDOM from 'react-dom/client'

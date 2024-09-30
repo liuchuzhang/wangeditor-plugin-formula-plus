@@ -65,7 +65,7 @@ const toolbarConfig: Partial<IToolbarConfig> = {
 公式获取的 HTML 格式如下
 
 ```html
-<span data-w-e-type="formula" data-w-e-is-void data-w-e-is-inline data-value="c = \\pm\\sqrt{a^2 + b^2}"></span>
+<span data-w-e-type="formula" data-value="c = \\pm\\sqrt{a^2 + b^2}"></span>
 ```
 
 其中 `data-value` 就是 LateX 格式的值，可使用第三方工具把 `<span>` 渲染成公式卡片，如 [KateX](https://katex.org/)。
