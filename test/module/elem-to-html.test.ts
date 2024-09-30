@@ -15,8 +15,6 @@ describe('formula elem-to-html', () => {
 
   it('elem to html', () => {
     const html = elemToHtmlConf.elemToHtml(formulaElem, '')
-    expect(html).toBe(
-      `<span data-w-e-type="formula" data-w-e-is-void data-w-e-is-inline data-value="123"></span>`
-    )
+    expect(html).toBe(`<span data-w-e-type="formula" data-value="123"></span>`)
   })
 })

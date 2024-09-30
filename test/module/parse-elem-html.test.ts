@@ -16,7 +16,7 @@ describe('parse elem html', () => {
 
   it('parse html', () => {
     const value = '123'
-    // elem-to-html 产出的 html 格式： <span data-w-e-type="formula" data-w-e-is-void data-w-e-is-inline data-value="${value}"></span>
+    // elem-to-html 产出的 html 格式： <span data-w-e-type="formula" data-value="${value}"></span>
     const elem = document.createElement('span')
     elem.setAttribute('data-w-e-type', 'formula')
     elem.setAttribute('data-value', value)

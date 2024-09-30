@@ -3,8 +3,10 @@
  * @author wangfupeng
  */
 
+import { Editor } from 'slate'
 import { jsx, VNode } from 'snabbdom'
 import { DomEditor, IDomEditor, SlateElement } from '@wangeditor/editor'
+import { Transforms } from 'slate'
 import { FormulaElement } from './custom-types'
 import { katexRender } from '../utils/util'
 
@@ -33,12 +35,6 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
       {formulaVnode}
     </div>
   )
-
-  setTimeout(() => {
-    if (!selected && vnode.elm) {
-      katexRender(value, vnode.elm)
-    }
-  })
 
   return vnode
 }
