@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.4.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.5...v1.4.0) (2024-10-09)
+
+
+### Features
+
+* add hotkey ([55b9d2e](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/55b9d2ecd1cf10bf17d3e5675906d0d0f02c1086))
+
 ## [1.3.5](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.4...v1.3.5) (2024-10-09)
 
 ## [1.3.4](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.3...v1.3.4) (2024-09-30)
