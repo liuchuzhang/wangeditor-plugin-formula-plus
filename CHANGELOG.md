@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.3.5](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.4...v1.3.5) (2024-10-09)
+
 ## [1.3.4](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.3...v1.3.4) (2024-09-30)
 
 
