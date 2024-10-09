@@ -1,10 +1,10 @@
 import { IButtonMenu, IDomEditor, t } from '@wangeditor/editor'
 import { SIGMA_SVG } from '../../constants/icon-svg'
-import { isMenuDisabled } from '../helper'
+import { isMenuDisabled, IS_MAC } from '../helper'
 import { FormulaElement } from '../custom-types'
 
 class TextToFormula implements IButtonMenu {
-  readonly title = t('转换成公式')
+  readonly title = `转换成公式(${IS_MAC ? 'cmd' : 'ctrl'}+shift+l)`
   readonly iconSvg = SIGMA_SVG
   readonly tag = 'button'
 

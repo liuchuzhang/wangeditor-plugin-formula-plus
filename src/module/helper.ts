@@ -4,6 +4,8 @@ import { Editor } from 'slate'
 import autoComplete from './components/AutoComplete'
 import { katexRender } from '../utils/util'
 
+export const IS_MAC = typeof navigator !== 'undefined' && /Mac OS X/.test(navigator.userAgent)
+
 const prefixClassName = (className: string) => `w-e-formula-${className}`
 
 export function isMenuDisabled(editor: IDomEditor, mark?: string): boolean {

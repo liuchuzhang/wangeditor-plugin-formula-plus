@@ -4,6 +4,7 @@
  */
 
 import { DomEditor, IDomEditor } from '@wangeditor/editor'
+import Hotkey from './hotkey'
 
 function withFormula<T extends IDomEditor>(editor: T) {
   const { isInline, isVoid } = editor
@@ -28,6 +29,29 @@ function withFormula<T extends IDomEditor>(editor: T) {
 
     return isVoid(elem)
   }
+
+  setTimeout(() => {
+    const { $textArea } = DomEditor.getTextarea(newEditor)
+    if ($textArea == null) return
+
+    $textArea.on('keydown', e => {
+      const event = e as KeyboardEvent
+      console.log('event')
+
+      if (Hotkey.isFormula(event)) {
+        event.preventDefault()
+        const selection = editor.getSelectionText()
+        if (!selection) return
+        editor.restoreSelection()
+        const formulaElem = {
+          type: 'formula',
+          value: selection,
+          children: [{ text: '' }],
+        }
+        editor.insertNode(formulaElem)
+      }
+    })
+  })
 
   return newEditor
 }
