@@ -4,7 +4,7 @@ import { isMenuDisabled } from '../helper'
 import { FormulaElement } from '../custom-types'
 
 class TextToFormula implements IButtonMenu {
-  readonly title = '转换成公式'
+  readonly title = t('转换成公式')
   readonly iconSvg = SIGMA_SVG
   readonly tag = 'button'
 
