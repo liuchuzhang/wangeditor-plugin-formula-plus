@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.0...v1.4.1) (2024-10-12)
+
+
+### Bug Fixes
+
+* remove log ([2b0ad40](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/2b0ad40d1c8c3d95f67fc99172a4316fdbfab29f))
+
 # [1.4.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.3.5...v1.4.0) (2024-10-09)
 
 
