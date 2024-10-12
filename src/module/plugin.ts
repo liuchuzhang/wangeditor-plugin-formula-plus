@@ -36,7 +36,6 @@ function withFormula<T extends IDomEditor>(editor: T) {
 
     $textArea.on('keydown', e => {
       const event = e as KeyboardEvent
-      console.log('event')
 
       if (Hotkey.isFormula(event)) {
         event.preventDefault()
