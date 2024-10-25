@@ -3,7 +3,7 @@ import { isKeyHotkey } from 'is-hotkey'
 import { IS_MAC } from './helper'
 
 const APPLE_HOTKEYS = {
-  formula: 'alt+q',
+  formula: 'ctrl+q',
 }
 
 type Hotkeys = typeof APPLE_HOTKEYS
