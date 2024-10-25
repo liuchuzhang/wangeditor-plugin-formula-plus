@@ -3,13 +3,13 @@ import { isKeyHotkey } from 'is-hotkey'
 import { IS_MAC } from './helper'
 
 const APPLE_HOTKEYS = {
-  formula: 'cmd+shift+l',
+  formula: 'alt+q',
 }
 
 type Hotkeys = typeof APPLE_HOTKEYS
 
 const WINDOWS_HOTKEYS: Hotkeys = {
-  formula: 'ctrl+shift+l',
+  formula: 'alt+q',
 }
 
 interface KEYS {
