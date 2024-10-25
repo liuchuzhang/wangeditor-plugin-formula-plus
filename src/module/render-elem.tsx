@@ -4,7 +4,7 @@
  */
 
 import { Editor } from 'slate'
-import { jsx, VNode } from 'snabbdom'
+import { h, VNode } from 'snabbdom'
 import { DomEditor, IDomEditor, SlateElement } from '@wangeditor/editor'
 import { Transforms } from 'slate'
 import { FormulaElement } from './custom-types'
@@ -16,12 +16,21 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
 
   // 构建 formula vnode
   const { value = '' } = elem as FormulaElement
-  const formulaVnode = <w-e-formula-card data-value={value} />
+  const formulaVnode = h(
+    'w-e-formula-card',
+    {
+      dataset: { value },
+    },
+    null
+  )
 
-  const vnode = (
-    <div
-      contentEditable={false}
-      style={{
+  const vnode = h(
+    'div',
+    {
+      props: {
+        contentEditable: false, // 不可编辑
+      },
+      style: {
         display: 'inline-block', // inline
         marginLeft: '3px',
         marginRight: '3px',
@@ -30,10 +39,9 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
           : '2px solid transparent',
         borderRadius: '3px',
         padding: '3px 3px',
-      }}
-    >
-      {formulaVnode}
-    </div>
+      },
+    },
+    [formulaVnode]
   )
 
   return vnode
