@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.4](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.2...v1.4.4) (2024-10-25)
+
+
+### Bug Fixes
+
+* update hotkey ([89e04ea](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/89e04ea1f481c8870da53eddeea05aca6db5ce71))
+* update mac hotkey ([18af5ef](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/18af5ef1b3c3d8a04d68a7771b34f1b6213db75b))
+
 ## [1.4.3](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.2...v1.4.3) (2024-10-25)
 
 
