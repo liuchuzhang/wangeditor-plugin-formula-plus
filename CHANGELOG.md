@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.1...v1.4.2) (2024-10-25)
+
+
+### Bug Fixes
+
+* dropdown menu display ([349e899](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/349e8997f0ced17ce1b29c137910a387e9f1063c))
+
 ## [1.4.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.0...v1.4.1) (2024-10-12)
 
 
