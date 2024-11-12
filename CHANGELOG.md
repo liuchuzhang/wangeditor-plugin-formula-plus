@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.5.1...v1.5.2) (2024-11-12)
+
+
+### Bug Fixes
+
+* latex initial render ([dbb03c8](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/dbb03c89d2e39ba3a399150b0e7f5bf4a7935083))
+
 ## [1.5.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.5.0...v1.5.1) (2024-11-12)
 
 
