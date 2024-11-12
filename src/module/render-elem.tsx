@@ -19,6 +19,9 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
       update(vnode) {
         formulaRenderWithEditor(editor, value, vnode.elm as HTMLElement)
       },
+      insert(vnode) {
+        formulaRenderWithEditor(editor, value, vnode.elm as HTMLElement)
+      },
     },
   })
 
