@@ -62,6 +62,7 @@ class InsertFormulaMenu implements IModalMenu {
     const { textareaId, buttonId } = this
 
     const { textareaContainerElem, setTextareaValue, renderElem } = genModalTextareaElems(
+      editor,
       '公式',
       textareaId,
       '使用 LateX 语法'

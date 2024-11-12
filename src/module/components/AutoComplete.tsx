@@ -4,7 +4,8 @@ import classNames from 'classnames'
 import { useClickAway, useUpdateEffect } from 'ahooks'
 import ReactDOM from 'react-dom/client'
 import defaultFunctions from './defaultFunctions'
-import { katexRender } from '../../utils/util'
+import { formulaRenderWithEditor } from '../helper'
+import { IDomEditor } from '@wangeditor/editor'
 import './index.less'
 
 const functionMap = functions.reduce((obj, item) => {
@@ -16,6 +17,7 @@ interface AutoCompleteProps {
   onClose: () => void
   onSelect: (symbol: string) => void
   initialStyle: React.CSSProperties
+  editor: IDomEditor
 }
 
 type AutoCompleteRef = {
@@ -28,7 +30,7 @@ type AutoCompleteRef = {
 }
 
 export const AutoComplete = React.forwardRef(
-  ({ initialStyle, onSelect, onClose }: AutoCompleteProps, ref) => {
+  ({ initialStyle, editor, onSelect, onClose }: AutoCompleteProps, ref) => {
     const divRef = useRef<HTMLDivElement>(null)
     const [value, setValue] = useState('')
     const [style, setStyle] = useState<React.CSSProperties>(initialStyle)
@@ -103,9 +105,7 @@ export const AutoComplete = React.forwardRef(
         return onClose()
       }
       divRef.current?.querySelectorAll('.w-e-autocomplete-item-render').forEach(e => {
-        katexRender(`\\displaystyle ${e.getAttribute('data-value') || ''}`, e as any, {
-          throwOnError: false,
-        })
+        formulaRenderWithEditor(editor, e.getAttribute('data-value') || '', e as any)
       })
     }, [list])
 
@@ -159,7 +159,7 @@ const getElementOffset = element => {
 }
 
 export default {
-  open(input, target) {
+  open({ input, target, editor }) {
     return new Promise<string>((resolve, reject) => {
       const div = document.createElement('div')
       document.body.appendChild(div)
@@ -237,6 +237,7 @@ export default {
         <AutoComplete
           ref={componentRef}
           initialStyle={initialStyle}
+          editor={editor}
           onSelect={template => {
             resolve(template)
             destroy()

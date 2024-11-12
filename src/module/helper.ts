@@ -2,9 +2,28 @@ import { DomEditor, IDomEditor } from '@wangeditor/editor'
 import $, { DOMElement } from '../utils/dom'
 import { Editor } from 'slate'
 import autoComplete from './components/AutoComplete'
-import { katexRender } from '../utils/util'
+import { formulaRender } from '../utils/util'
+import { KatexOptions } from 'katex'
 
 export const IS_MAC = typeof navigator !== 'undefined' && /Mac OS X/.test(navigator.userAgent)
+
+export interface IFormulaConfig {
+  formulaConfig: {
+    katexOptions?: KatexOptions
+    katexRender?: (value: string, el: HTMLElement) => void
+  }
+}
+
+export function getFormulaConfig(editor: IDomEditor): IFormulaConfig['formulaConfig'] {
+  const { EXTEND_CONF } = editor.getConfig()
+  const { formulaConfig = {} } = (EXTEND_CONF || {}) as IFormulaConfig
+  return formulaConfig
+}
+
+export function formulaRenderWithEditor(editor: IDomEditor, value: string, elem: HTMLElement) {
+  const { katexOptions, katexRender } = getFormulaConfig(editor)
+  formulaRender(value, elem, { katexOptions, katexRender })
+}
 
 const prefixClassName = (className: string) => `w-e-formula-${className}`
 
@@ -74,7 +93,12 @@ function insertText(textarea, text) {
  * @param placeholder input placeholder
  * @returns [$container, $textarea, $textareaBox]
  */
-export function genModalTextareaElems(labelText: string, textareaId: string, placeholder?: string) {
+export function genModalTextareaElems(
+  editor: IDomEditor,
+  labelText: string,
+  textareaId: string,
+  placeholder?: string
+) {
   const $container = $('<div class="babel-container"></div>')
   $container.append(`<div class="${prefixClassName('modal-label')}">${labelText}</div>`)
   const $textareaBox = $(`<div class="${prefixClassName('modal-textarea-box')}"></div>`)
@@ -96,7 +120,7 @@ export function genModalTextareaElems(labelText: string, textareaId: string, pla
   const $render = $('<div class="w-e-formula-modal-latex"></div>')
 
   const renderLatex = (str: string) => {
-    katexRender(str, $render[0] as any)
+    formulaRenderWithEditor(editor, str, $render[0] as any)
   }
   $textareaBox.append($textarea)
   $textareaBox.append($textareaContent)
@@ -122,7 +146,11 @@ export function genModalTextareaElems(labelText: string, textareaId: string, pla
         keyword = e.data
         isShowAutoComplete = true
         autoComplete
-          .open($textarea[0], cursorElem)
+          .open({
+            input: $textarea[0],
+            target: cursorElem,
+            editor,
+          })
           .then(symbol => {
             insertText($textarea[0], symbol)
             setTextareaValue($textarea.val())

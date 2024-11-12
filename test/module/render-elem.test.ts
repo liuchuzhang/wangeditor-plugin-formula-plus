@@ -19,9 +19,5 @@ describe('formula render-elem', () => {
     const containerVnode = renderElemConf.renderElem(formulaElem, null, editor) as any
     expect(containerVnode.sel).toBe('div')
     expect(containerVnode.data.props.contentEditable).toBe(false)
-
-    const formulaVnode = containerVnode.children[0]
-    expect(formulaVnode.sel).toBe('w-e-formula-card')
-    expect(formulaVnode.data.dataset.value).toBe('123')
   })
 })

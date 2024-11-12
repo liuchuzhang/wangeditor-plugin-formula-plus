@@ -17,8 +17,7 @@ import { PENCIL_SVG } from '../../constants/icon-svg'
 import $, { Dom7Array, DOMElement } from '../../utils/dom'
 import { genRandomStr } from '../../utils/util'
 import { FormulaElement } from '../custom-types'
-import katex from 'katex'
-import { stringToHtml, genModalTextareaElems } from '../helper'
+import { genModalTextareaElems } from '../helper'
 
 /**
  * 生成唯一的 DOM ID
@@ -86,6 +85,7 @@ class EditFormulaMenu implements IModalMenu {
     const { textareaId, buttonId } = this
 
     const { textareaContainerElem, setTextareaValue, renderElem } = genModalTextareaElems(
+      editor,
       '公式',
       textareaId,
       '使用 LateX 语法'

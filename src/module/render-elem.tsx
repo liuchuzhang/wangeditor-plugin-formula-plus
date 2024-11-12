@@ -3,12 +3,10 @@
  * @author wangfupeng
  */
 
-import { Editor } from 'slate'
 import { h, VNode } from 'snabbdom'
 import { DomEditor, IDomEditor, SlateElement } from '@wangeditor/editor'
-import { Transforms } from 'slate'
 import { FormulaElement } from './custom-types'
-import { katexRender } from '../utils/util'
+import { formulaRenderWithEditor } from './helper'
 
 function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDomEditor): VNode {
   // 当前节点是否选中
@@ -16,13 +14,13 @@ function renderFormula(elem: SlateElement, children: VNode[] | null, editor: IDo
 
   // 构建 formula vnode
   const { value = '' } = elem as FormulaElement
-  const formulaVnode = h(
-    'w-e-formula-card',
-    {
-      dataset: { value },
+  const formulaVnode = h('span', {
+    hook: {
+      update(vnode) {
+        formulaRenderWithEditor(editor, value, vnode.elm as HTMLElement)
+      },
     },
-    null
-  )
+  })
 
   const vnode = h(
     'div',
