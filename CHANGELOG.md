@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.5.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.4...v1.5.0) (2024-11-12)
+
+
+### Features
+
+* add `formulaConfig` ([9c877be](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/9c877be8197c94df5122fbc1693de765065e1a9b))
+
 ## [1.4.4](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.2...v1.4.4) (2024-10-25)
 
 
