@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.5.0...v1.5.1) (2024-11-12)
+
+
+### Bug Fixes
+
+* update config `katexRender` to `formulaRender` ([a30194e](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/commit/a30194e4c7ae5c3fcbb1e5a9c251a0398bd743b3))
+
 # [1.5.0](https://github.com/liuchuzhang/wangeditor-plugin-formula-plus/compare/v1.4.4...v1.5.0) (2024-11-12)
 
 
