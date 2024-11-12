@@ -10,7 +10,7 @@ export const IS_MAC = typeof navigator !== 'undefined' && /Mac OS X/.test(naviga
 export interface IFormulaConfig {
   formulaConfig: {
     katexOptions?: KatexOptions
-    katexRender?: (value: string, el: HTMLElement) => void
+    formulaRender?: (value: string, el: HTMLElement) => void
   }
 }
 
@@ -21,7 +21,7 @@ export function getFormulaConfig(editor: IDomEditor): IFormulaConfig['formulaCon
 }
 
 export function formulaRenderWithEditor(editor: IDomEditor, value: string, elem: HTMLElement) {
-  const { katexOptions, katexRender } = getFormulaConfig(editor)
+  const { katexOptions, formulaRender: katexRender } = getFormulaConfig(editor)
   formulaRender(value, elem, { katexOptions, katexRender })
 }
 
